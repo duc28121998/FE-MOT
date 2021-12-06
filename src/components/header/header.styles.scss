@@ -1,0 +1,38 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  inset: 0;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+  }
+
+  .options {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    .option {
+    }
+  }
+}
+.king {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  strong {
+    padding-right: 4px;
+  }
+}
+
+strong {
+  font-family: Lab Grotesque VN;
+}

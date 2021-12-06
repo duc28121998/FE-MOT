@@ -1,0 +1,20 @@
+:root {
+  --main-bg-color: #ffffff;
+}
+.dark :root {
+  --main-bg-color: #000000;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
