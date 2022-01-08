@@ -1,0 +1,135 @@
+.carousel-giay {
+  width: 1210px;
+  height: 490px;
+  padding-top: 120px;
+  margin-left: 120px;
+  &__title {
+    width: 1320px;
+    height: 61px;
+    h4 {
+      width: 246px;
+      height: 35px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 35px;
+      color: #111820;
+    }
+  }
+  &__mot {
+    width: 300px;
+    height: 253px;
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+  &__hai {
+    width: 300px;
+    height: 253px;
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+  &__ba {
+    width: 300px;
+    height: 253px;
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-giay {
+    width: 900px;
+    height: 490px;
+    padding-top: 120px;
+    margin-left: 80px;
+    &__title {
+      width: 1320px;
+      height: 61px;
+      h4 {
+        width: 246px;
+        height: 35px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 35px;
+        color: #111820;
+      }
+    }
+    &__mot {
+      width: 250px;
+      height: 253px;
+      img {
+        width: 250px;
+        height: 200px;
+      }
+    }
+    &__hai {
+      width: 250px;
+      height: 253px;
+      img {
+        width: 250px;
+        height: 200px;
+      }
+    }
+    &__ba {
+      width: 250px;
+      height: 253px;
+      img {
+        width: 250px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .carousel-giay {
+    width: 359px;
+    height: 346px;
+    padding-top: 60px;
+    margin-left: 20px;
+    &__title {
+      width: 359px;
+      height: 39px;
+      h4 {
+        width: 185px;
+        height: 27px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #111820;
+      }
+    }
+    &__mot {
+      width: 161px;
+      height: 167px;
+      img {
+        width: 161px;
+        height: 107px;
+      }
+    }
+    &__hai {
+      width: 161px;
+      height: 167px;
+      img {
+        width: 161px;
+        height: 107px;
+      }
+    }
+    &__ba {
+      width: 161px;
+      height: 167px;
+      img {
+        width: 161px;
+        height: 107px;
+      }
+    }
+  }
+}

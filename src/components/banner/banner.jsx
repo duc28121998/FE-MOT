@@ -1,63 +1,42 @@
-import React from "react";
-import "./banner.scss";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
-import SwiperCore, { Pagination } from "swiper";
-SwiperCore.use([Pagination]);
+import React from 'react'
+import './banner.scss'
+import { Carousel } from 'antd'
 
-const Navbar = () => {
+// rafce
+const Banner = () => {
   return (
-    <div className="navbar row pt-0">
-      <Swiper
-        pagination={true}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide className="banner ">
-          <div className="col-12 col-lg-6">
-            <div className="d-flex flex-column justify-content-center ml-5">
-              <h1 className="banner__title">tôi & ta</h1>
-              <p className="banner__content">
-                Phiên bản đặc biệt cho mùa lễ hôji 2021
-              </p>
-              <button className="btn btn-light banner__buynow">
-                mua liền !
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="banner row">
-          <div className="col-12 col-lg-6">
-            <div className="d-flex flex-column justify-content-center ml-5">
-              <h1 className="banner__title">tôi & ta</h1>
-              <p className="banner__content">
-                Phiên bản đặc biệt cho mùa lễ hôji 2021
-              </p>
-              <button className="btn btn-light banner__buynow">
-                mua liền !
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="banner row">
-          <div className="col-12 col-lg-6">
-            <div className="d-flex flex-column justify-content-center ml-5">
-              <h1 className="banner__title">tôi & ta</h1>
-              <p className="banner__content">
-                Phiên bản đặc biệt cho mùa lễ hôji 2021
-              </p>
-              <button className="btn btn-light banner__buynow">
-                mua liền !
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
-  );
-};
+    <div className="banner">
+      <Carousel>
+        {/* 1 */}
 
-export default Navbar;
+        <div className="banner__size">
+          <div className="banner__title">tôi & ta</div>
+          <div className="banner__content">
+            phiên bản đặc-biệt cho mùa lễ hội 2021
+          </div>
+          <div className="banner__buynow">mua liền !</div>
+        </div>
+
+        {/* 2 */}
+
+        <div className="banner__size">
+          <div className="banner__title">tôi & ta</div>
+          <div className="banner__content">
+            phiên bản đặc-biệt cho mùa lễ hội 2022
+          </div>
+          <div className="banner__buynow">mua liền !</div>
+        </div>
+        {/* 3 */}
+        <div className="banner__size">
+          <div className="banner__title">tôi & ta</div>
+          <div className="banner__content">
+            phiên bản đặc-biệt cho mùa lễ hội 2023
+          </div>
+          <div className="banner__buynow">mua liền !</div>
+        </div>
+      </Carousel>
+    </div>
+  )
+}
+
+export default Banner

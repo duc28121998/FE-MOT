@@ -1,0 +1,44 @@
+@media screen and (max-width: 900px) {
+  .main-nav {
+    position: absolute;
+    width: 350px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__menu {
+      width: 32px;
+      height: 32px;
+    }
+    &__options {
+    }
+    &__king {
+    }
+    &__giohang {
+    }
+  }
+}
+.Drawer {
+  width: 720px;
+  height: 720px;
+
+  h2 {
+    font-family: 'Lab Grotesque VN';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 55px;
+    padding-left: 30px;
+    /* identical to box height, or 106% */
+
+    /* black */
+
+    color: #111820;
+  }
+}
+.ngonngu {
+  padding-top: 120px;
+}

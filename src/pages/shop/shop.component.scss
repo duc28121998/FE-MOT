@@ -1,0 +1,71 @@
+.shop-page {
+  padding-top: 200px;
+  &__name {
+    font-family: 'Lab Grotesque VN';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 112px;
+    line-height: 112px;
+    padding-bottom: 50px;
+    &-icon {
+      display: none;
+    }
+  }
+  &__title {
+    border-top: 1px solid #111820;
+    font-family: 'Lab Grotesque VN';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #111820;
+    &-loc {
+      padding-right: 20px !important;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .shop-page {
+    padding-top: 100px;
+    &__name {
+      width: 370px;
+      font-size: 50px;
+      line-height: 56px;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      padding-bottom: 25px;
+      /* or 100% */
+
+      color: #000000;
+      &-icon {
+        display: block;
+      }
+      &-an {
+        display: none;
+      }
+      &-mobile {
+        padding-top: 17px !important;
+      }
+    }
+    &__title {
+      // margin-left: 50px;
+      // margin-right: 25px;
+      width: 370px;
+      border-top: 1px solid #111820;
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      color: #111820;
+      justify-self: center;
+      text-align: center;
+      padding: 0 30px;
+
+      &-loc {
+        padding-right: 5px !important;
+        justify-self: center;
+      }
+    }
+  }
+}

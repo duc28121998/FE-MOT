@@ -1,0 +1,387 @@
+.giaydoithuong {
+  width: 1260px;
+  height: 840px;
+  margin: 0px 0px 150px 180px;
+  padding-top: 120px;
+  // position: relative;
+  &__sanpham {
+    width: 360px;
+    height: 840px;
+    padding: 70px 50px 30px 0px;
+    img {
+      width: 360px;
+      height: 240px;
+    }
+  }
+  &__trang {
+    width: 360px;
+    height: 63px;
+    padding: 16px 0px 80px 0px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 27px;
+    color: #111820;
+  }
+  &__vang {
+    width: 360px;
+    height: 63px;
+    padding: 16px 0px 80px 0px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 27px;
+    color: #111820;
+  }
+  &__color {
+    width: 24px;
+    height: 24px;
+    background: #ebeded;
+    border-radius: 50%;
+    margin-top: 12px;
+    margin-right: 15px;
+    &-red {
+      background: red;
+    }
+  }
+  &__background {
+    width: 720px;
+    height: 840px;
+    background-color: #b83d24;
+    // position: relative;
+    img {
+      width: 486px;
+      height: 607px;
+      position: absolute;
+      margin: 139px 119px 94px 130px;
+    }
+  }
+  &__title {
+    position: absolute;
+    height: 560px;
+    padding: 630px 244px 115px 160px;
+    font-family: 'Lab Grotesque VN';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 68px;
+    color: #ffffff;
+  }
+  &__p {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 27px;
+    color: #ffffff;
+
+    padding: 765px 369px 80px 165px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .giaydoithuong {
+    width: 945px;
+    height: 630px;
+    margin: 0px 0px 120px 85px;
+    padding-top: 120px;
+    &__sanpham {
+      width: 270px;
+      height: 240px;
+      padding: 50px 60px 20px 0px;
+      img {
+        width: 270px;
+        height: 180px;
+      }
+    }
+    &__trang {
+      width: 297px;
+      height: 40px;
+      padding: 12px 0px 60px 0px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 25px;
+      color: #111820;
+    }
+    &__vang {
+      width: 295px;
+      height: 40px;
+      padding: 12px 0px 60px 0px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 25px;
+      color: #111820;
+    }
+    &__color {
+      width: 24px;
+      height: 24px;
+      background: #ebeded;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+    &__background {
+      width: 540px;
+      height: 630px;
+      background-color: #b83d24;
+      position: relative;
+      img {
+        width: 360px;
+        height: 400px;
+        position: absolute;
+        margin: 110px 90px 94px 105px;
+      }
+    }
+    &__title {
+      position: absolute;
+      width: 500px;
+      // height: 400px;
+      padding: 400px 100px 115px 130px;
+
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 68px;
+      color: #ffffff;
+    }
+    &__p {
+      position: absolute;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #ffffff;
+      padding: 540px 100px 115px 130px;
+    }
+  }
+}
+
+@media screen and(max-width : 599px) {
+  // .flex-container {
+  //   display: flex;
+  //   flex-direction: column-reverse;
+  // }
+  .giaydoithuong {
+    width: 375px;
+    height: 1086px;
+    margin: 0px;
+    padding-top: 100px;
+    &__sanpham {
+      width: 279px;
+      height: 264px;
+      padding: 0px 48px 56px 48px;
+      img {
+        width: 279px;
+        height: 186px;
+      }
+    }
+    &__trang {
+      width: 279px;
+      height: 22px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 22px;
+      color: #111820;
+      padding-bottom: 56px;
+    }
+    &__vang {
+      width: 279px;
+      height: 22px;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #111820;
+      padding-bottom: 80px;
+    }
+    &__color {
+      width: 24px;
+      height: 24px;
+      background: #ebeded;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+    &__background {
+      width: 375px;
+      height: 438px;
+      background-color: #b83d24;
+      position: relative;
+      margin-top: 400px;
+      padding-bottom: 80px !important;
+
+      img {
+        width: 253px;
+        height: 316px;
+        position: absolute;
+        margin: 74px 61px 48px 61px;
+      }
+    }
+    &__title {
+      position: absolute;
+      width: 280px;
+      height: 80px;
+      padding: 323px 20px 58px 80px;
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 40px;
+      color: #ffffff;
+    }
+    &__p {
+      position: absolute;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #ffffff;
+      padding: 405px 40px 32px 80px;
+    }
+  }
+}
+
+// .giaydoithuong {
+//   font-family: 'Lab Grotesque VN';
+//   font-style: normal;
+//   width: 1260px;
+//   height: 840px;
+//   padding-top: 250px;
+//   padding-left: 180px;
+//   &__background {
+//     position: relative;
+//     background-color: #b83d24;
+//     width: 720px;
+//     height: 840px;
+
+//     img {
+//       width: 486px;
+//       position: absolute;
+//       margin: 140px 120px 140px 125px;
+//     }
+//   }
+
+//   &__title {
+//     position: absolute;
+//     //   width: 720px;
+//     height: 560px;
+//     padding: 589px 244px 115px 160px;
+//     font-family: 'Lab Grotesque VN';
+//     font-style: normal;
+//     font-weight: 300;
+//     font-size: 64px;
+//     line-height: 68px;
+//     color: #ffffff;
+//   }
+//   &__p {
+//     position: absolute;
+//     // width: 150px;
+//     height: 27px;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 17px;
+//     line-height: 27px;
+//     color: #ffffff;
+
+//     padding: 733px 369px 80px 160px;
+//   }
+//   &__sanpham {
+//     width: 360px;
+//     height: 319px;
+//     // padding: 60px 180px 0px 180px;
+//     padding: 80px 100px 20px 150px;
+//     img {
+//       width: 360px;
+//       height: 240px;
+//     }
+//     &-tat {
+//       width: 360px !important;
+//       height: 240px !important;
+//     }
+//   }
+//   &__trang {
+//     font-weight: bold;
+//     font-size: 17px;
+//     line-height: 27px;
+//     color: #111820;
+//     padding-top: 16px;
+//     padding-bottom: 80px;
+//   }
+//   &__vang {
+//     font-weight: bold;
+//     font-size: 17px;
+//     line-height: 27px;
+//     color: #111820;
+//     padding-top: 16px;
+//   }
+// }
+
+// @media screen and(max-width : 599px) {
+//   .giaydoithuong {
+//     font-family: 'Lab Grotesque VN';
+//     font-style: normal;
+//     width: 375px;
+//     height: 1000px;
+//     padding-top: 200px;
+//     &__background {
+//       background-color: #b83d24;
+//       width: 375px;
+//       height: 438px;
+//       img {
+//         width: 247px;
+//         position: absolute;
+//         margin: 75px 64px 75px 64px;
+//       }
+//     }
+//     &__title {
+//       position: absolute;
+//       width: 300px;
+//       height: 40px;
+//       padding: 300px 40px 58px 80px;
+//       font-style: normal;
+//       font-weight: 300;
+//       font-size: 36px;
+//       line-height: 40px;
+//       color: #ffffff;
+//     }
+//     &__p {
+//       position: absolute;
+//       width: 255px;
+//       height: 22px;
+//       font-style: normal;
+//       font-weight: normal;
+//       font-size: 15px;
+//       line-height: 22px;
+//       color: #ffffff;
+//       padding: 384px 40px 16px 80px;
+//     }
+//     &__sanpham {
+//       width: 279px;
+//       height: 264px;
+//       padding: 64px 0px 76px 48px;
+//       img {
+//         width: 279px;
+//         height: 186px;
+//         // padding-bottom: 16px;
+//       }
+//     }
+//     &__trang {
+//       width: 279px;
+//       height: 22px;
+//       font-style: normal;
+//       font-weight: bold;
+//       font-size: 15px;
+//       line-height: 22px;
+//       color: #111820;
+//       padding-bottom: 56px;
+//     }
+//     &__vang {
+//       width: 279px;
+//       height: 22px;
+//       font-weight: bold;
+//       font-style: normal;
+//       font-size: 15px;
+//       line-height: 22px;
+//       color: #111820;
+//       padding-bottom: 80px;
+//     }
+//   }
+// }

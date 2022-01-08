@@ -1,0 +1,95 @@
+.location {
+  width: 100%;
+  height: 2000px;
+  font-family: 'Lab Grotesque VN';
+  background-color: #111820;
+  &__banner {
+    width: 1320px;
+    height: 720px;
+    padding: 100px 0px 120px 130px;
+    // margin-bottom: 200px;
+
+    //TRÁI CHỮ
+    &-text {
+      h1 {
+        padding-top: 80px;
+        width: 720px;
+        height: 112px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 112px;
+        line-height: 112px;
+        color: #ffffff;
+        position: relative;
+        z-index: 2;
+      }
+      h5 {
+        width: 480px;
+        height: 162px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 27px;
+        color: #ffffff;
+        padding-top: 40px;
+      }
+      h4 {
+        width: 480px;
+        height: 162px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 27px;
+        color: #ffffff;
+        padding-top: 20px;
+      }
+    }
+
+    //PHẢI HÌNH
+    &-image {
+      img {
+        width: 720px;
+        height: 720px;
+      }
+    }
+  }
+  .ant-tabs {
+    padding-top: 150px;
+    width: 1320px;
+    margin-left: 120px;
+  }
+  .ant-tabs-nav-wrap {
+    border-bottom: 1px solid #ffffff;
+  }
+  .ant-tabs-tab {
+    width: 116px;
+    height: 35px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 35px;
+    // color: #ffffff;
+    color: grey;
+    // opacity: 0.3;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #ffffff;
+    width: 116px;
+    height: 35px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 35px;
+    /* identical to box height, or 130% */
+
+    color: #ffffff;
+    border-bottom: 2px solid white;
+  }
+  //GẠCH DƯỚI ACTIVE
+  .ant-tabs-ink-bar {
+    position: absolute;
+    padding-top: 4px;
+    background: white;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,239 @@
+.giay {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  min-height: 587px;
+  width: 484px;
+  &__title {
+    margin-top: 32px;
+  }
+}
+.rectangle-10 {
+  height: 480px;
+  object-fit: cover;
+  width: 480px;
+}
+.explore {
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-top: 32px;
+  min-height: 27px;
+  white-space: nowrap;
+}
+
+.explore-1 {
+  letter-spacing: 0;
+  line-height: 48px;
+  min-height: 48px;
+  white-space: nowrap;
+}
+
+.giay.giay-1 {
+  margin-top: 120px;
+}
+
+.giay.giay-2 {
+  margin-top: unset;
+  margin-top: 64px;
+}
+
+.shop {
+  align-items: flex-start;
+  display: flex;
+  height: 1593px;
+  min-width: 1200px;
+  font-family: 'Lab Grotesque VN';
+  margin-top: 120px;
+
+  &__title {
+    font-family: 'Lab Grotesque VN';
+    font-weight: bold;
+    font-size: 27px;
+    font-style: normal;
+  }
+}
+
+.flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 1393px;
+  position: relative;
+  width: 484px;
+}
+
+.explore-2 {
+  letter-spacing: 0;
+  line-height: 35px;
+  min-height: 35px;
+  white-space: nowrap;
+}
+
+.giay-container {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 236px;
+  min-height: 1294px;
+  position: relative;
+  width: 484px;
+}
+
+.giay-3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  min-height: 587px;
+  width: 484px;
+}
+
+.rectangle-10-1 {
+  height: 480px;
+  object-fit: cover;
+  width: 480px;
+}
+
+.explore-container {
+  height: 74px;
+  margin-left: -1px;
+  margin-top: 32px;
+  position: relative;
+  width: 360px;
+}
+
+.explore-3 {
+  left: 1px;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .giay {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    min-height: 587px;
+    width: 484px;
+    &__title {
+      margin-top: 32px;
+    }
+  }
+  .rectangle-10 {
+    height: 480px;
+    object-fit: cover;
+    width: 480px;
+  }
+  .explore {
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-top: 32px;
+    min-height: 27px;
+    white-space: nowrap;
+  }
+
+  .explore-1 {
+    letter-spacing: 0;
+    line-height: 48px;
+    min-height: 48px;
+    white-space: nowrap;
+  }
+
+  .giay.giay-1 {
+    margin-top: 120px;
+  }
+
+  .giay.giay-2 {
+    margin-top: unset;
+    margin-top: 64px;
+  }
+
+  .shop {
+    align-items: flex-start;
+    display: flex;
+    height: 1593px;
+    min-width: 1200px;
+    font-family: 'Lab Grotesque VN';
+    margin-top: 120px;
+
+    &__title {
+      font-family: 'Lab Grotesque VN';
+      font-weight: bold;
+      font-size: 27px;
+      font-style: normal;
+    }
+  }
+
+  .flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 1393px;
+    position: relative;
+    width: 484px;
+  }
+
+  .explore-2 {
+    letter-spacing: 0;
+    line-height: 35px;
+    min-height: 35px;
+    white-space: nowrap;
+  }
+
+  .giay-container {
+    align-items: flex-start;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 236px;
+    min-height: 1294px;
+    position: relative;
+    width: 484px;
+  }
+
+  .giay-3 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    min-height: 587px;
+    width: 484px;
+  }
+
+  .rectangle-10-1 {
+    height: 480px;
+    object-fit: cover;
+    width: 480px;
+  }
+
+  .explore-container {
+    height: 74px;
+    margin-left: -1px;
+    margin-top: 32px;
+    position: relative;
+    width: 360px;
+  }
+
+  .explore-3 {
+    left: 1px;
+    letter-spacing: 0;
+    line-height: 27px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

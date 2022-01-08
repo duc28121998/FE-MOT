@@ -1,0 +1,30 @@
+.carousel-feedback {
+  padding-top: 200px;
+}
+.feedback {
+  width: 1399px;
+  height: 400px;
+  margin-top: 200px;
+  margin-left: 120px;
+  &__anh1 {
+    img {
+      width: 600px;
+      height: 400px;
+      cursor: pointer;
+    }
+  }
+  &__anh2 {
+    img {
+      width: 319px;
+      height: 400px;
+      cursor: pointer;
+    }
+  }
+  &__anh3 {
+    img {
+      cursor: pointer;
+      width: 319px;
+      height: 400px;
+    }
+  }
+}

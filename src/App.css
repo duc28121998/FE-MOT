@@ -5,11 +5,21 @@
   --main-bg-color: #000000;
 }
 
-body {
-  font-family: "Lab Grotesque VN";
-  background-color: var(--main-bg-color);
+.background-red {
+  background-color: red;
+}
+.background-red {
+  background-color: blue;
 }
 
+body {
+  font-family: 'Lab Grotesque VN';
+  background-color: var(--main-bg-color);
+}
+.main-content {
+  min-height: 100vh;
+  
+}
 a {
   text-decoration: none;
   color: black;
@@ -17,4 +27,222 @@ a {
 
 * {
   box-sizing: border-box;
+
+  font-family: 'Lab Grotesque VN';
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/040b5be83ce63bb3c25070b857949c36.woff') format('woff2'),
+    url('./font/ab8129a9f020e569ba9e63a7fb12952c.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/7860be9fbd01ce212b186a9fb371049e.woff2') format('woff2'),
+    url('./font/7860be9fbd01ce212b186a9fb371049e.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/3e20aabb62d54925f8402c0a17bb8fa3.woff2') format('woff2'),
+    url('./font/3e20aabb62d54925f8402c0a17bb8fa3.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/f31621c5750d4e84c0b7ec9bf8642ad5.woff2') format('woff2'),
+    url('./font/f31621c5750d4e84c0b7ec9bf8642ad5.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/040b5be83ce63bb3c25070b857949c36.woff2') format('woff2'),
+    url('./font/040b5be83ce63bb3c25070b857949c36.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/a35f25397e3835101603276fedd858a5.woff2') format('woff2'),
+    url('./font/a35f25397e3835101603276fedd858a5.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/10b2c17c547cf02bb526873ee5ba9dae.woff2') format('woff2'),
+    url('./font/10b2c17c547cf02bb526873ee5ba9dae.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/e5cc2905c1ac11ed0c2ba89faf15bbe6.woff2') format('woff2'),
+    url('./font/e5cc2905c1ac11ed0c2ba89faf15bbe6.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/6eae297a46dd40169c1b256172d68dd6.woff2') format('woff2'),
+    url('./font/6eae297a46dd40169c1b256172d68dd6.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/337321e248a272bc444a62fd9d81b125.woff2') format('woff2'),
+    url('./font/337321e248a272bc444a62fd9d81b125.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/d3a13e270645cd2a2a51608880abd7be.woff2') format('woff2'),
+    url('./font/d3a13e270645cd2a2a51608880abd7be.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/19d3785c3b2d7c7b060dd1391d8c722c.woff2') format('woff2'),
+    url('./font/19d3785c3b2d7c7b060dd1391d8c722c.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/a7a5a2d63c67c3a951f1549d53a2b9e7.woff2') format('woff2'),
+    url('./font/a7a5a2d63c67c3a951f1549d53a2b9e7.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/6ef3e1db5ebadb434f5330157953ec16.woff2') format('woff2'),
+    url('./font/6ef3e1db5ebadb434f5330157953ec16.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/1ca10038fd5dfce2198970126d94e35a.woff2') format('woff2'),
+    url('./font/1ca10038fd5dfce2198970126d94e35a.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/5f15477e83bab7ab91922868e4430184.woff2') format('woff2'),
+    url('./font/5f15477e83bab7ab91922868e4430184.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/04349b15ab264012993fba156baebfaf.woff2') format('woff2'),
+    url('./font/04349b15ab264012993fba156baebfaf.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/d830e968719b74817931b470e9b54d7d.woff2') format('woff2'),
+    url('./font/d830e968719b74817931b470e9b54d7d.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/9e12a26058022a2be483de8649a07d51.woff2') format('woff2'),
+    url('./font/9e12a26058022a2be483de8649a07d51.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/052e2cc9e7093ed5b2ebed80e7661797.woff2') format('woff2'),
+    url('./font/052e2cc9e7093ed5b2ebed80e7661797.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/0ccbcfc1e69295bde5be9ddc07e8cfad.woff2') format('woff2'),
+    url('./font/0ccbcfc1e69295bde5be9ddc07e8cfad.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/f1495b5f37cec69795f54f7bed9a01d9.woff2') format('woff2'),
+    url('./font/f1495b5f37cec69795f54f7bed9a01d9.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/868ed61b6983cc53c82c31124527ecb9.woff2') format('woff2'),
+    url('./font/868ed61b6983cc53c82c31124527ecb9.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque VN';
+  src: url('./font/7b14944477f3d76b6b28923a48f9670c.woff2') format('woff2'),
+    url('./font/7b14944477f3d76b6b28923a48f9670c.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }

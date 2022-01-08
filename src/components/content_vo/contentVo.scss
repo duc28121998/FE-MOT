@@ -1,0 +1,220 @@
+.vo {
+  font-family: 'Lab Grotesque VN';
+  font-style: normal;
+  width: 1260px;
+  height: 840px;
+  padding-top: 250px;
+  margin-bottom: 380px;
+  &__background {
+    position: relative;
+    background-color: #12312b;
+
+    width: 720px;
+    height: 840px;
+    img {
+      width: 480px;
+      position: absolute;
+      margin: 140px 120px 140px 125px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    //   width: 720px;
+    height: 560px;
+    padding: 657px 255px 115px 160px;
+    font-family: 'Lab Grotesque VN';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 68px;
+    color: #ffffff;
+  }
+  &__p {
+    position: absolute;
+    // width: 150px;
+    height: 27px;
+    font-family: Lab Grotesque VN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 27px;
+    color: #ffffff;
+
+    padding: 733px 446px 80px 160px;
+  }
+  &__sanpham {
+    width: 360px;
+    height: 319px;
+    padding: 30px 0px 20px 180px;
+    img {
+      width: 360px;
+      height: 240px;
+    }
+    &-tat {
+      width: 360px !important;
+      height: 360px !important;
+    }
+  }
+  &__gia {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 27px;
+    color: #111820;
+    padding-bottom: 82px;
+    padding-top: 16px;
+  }
+  &__de {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 27px;
+    color: #111820;
+    padding-top: 16px;
+  }
+}
+@media screen and(max-width : 1200px) {
+  .vo {
+    font-family: 'Lab Grotesque VN';
+    font-style: normal;
+    width: 945px;
+    height: 630px;
+    padding-top: 220px;
+    margin-bottom: 320px;
+    &__background {
+      background-color: #12312b;
+      width: 540px;
+      height: 630px;
+      img {
+        width: 360px;
+        position: absolute;
+        margin: 95px 70px 80px 95px;
+      }
+    }
+    &__title {
+      position: absolute;
+      width: 500px;
+      //  height: 560px;
+      padding: 470px 150px 115px 110px;
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 50px;
+      line-height: 68px;
+      color: #ffffff;
+    }
+    &__p {
+      position: absolute;
+      // width: 140px;
+      height: 20px;
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+
+      color: #ffffff;
+      padding: 540px 100px 60px 120px;
+    }
+    &__sanpham {
+      width: 270px;
+      height: 240px;
+      padding: 25px 0px 0px 130px;
+      img {
+        width: 270px;
+        height: 180px;
+      }
+      &-tat {
+        width: 290px !important;
+        height: 290px !important;
+      }
+    }
+    &__gia {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      color: black;
+      padding-bottom: 50px;
+      padding-top: 13px;
+    }
+    &__de {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      color: black;
+    }
+  }
+}
+
+@media screen and(max-width : 599px) {
+  .vo {
+    font-family: 'Lab Grotesque VN';
+    font-style: normal;
+    width: 375px;
+    height: 1000px;
+    padding-top: 0px;
+    margin-bottom: 180px;
+    // padding-bottom: 150px;
+    &__background {
+      background-color: #12312b;
+      width: 375px;
+      height: 438px;
+      img {
+        width: 247px;
+        position: absolute;
+        margin: 75px 64px 75px 64px;
+      }
+    }
+    &__title {
+      position: absolute;
+      width: 300px;
+      height: 40px;
+      padding: 340px 40px 58px 80px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 40px;
+      color: #ffffff;
+    }
+    &__p {
+      position: absolute;
+      width: 255px;
+      height: 22px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #ffffff;
+      padding: 384px 40px 16px 80px;
+    }
+    &__sanpham {
+      width: 279px;
+      height: 264px;
+      padding: 64px 48px 100px 48px;
+      img {
+        width: 279px;
+        height: 186px;
+        // padding-bottom: 16px;
+      }
+    }
+    &__gia {
+      width: 279px;
+      height: 22px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 22px;
+      color: #111820;
+      padding-bottom: 55px;
+    }
+    &__de {
+      width: 279px;
+      height: 22px;
+      font-weight: bold;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #111820;
+      padding-bottom: 80px;
+    }
+  }
+}

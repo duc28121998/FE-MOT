@@ -1,0 +1,679 @@
+.product {
+  width: 100%;
+  height: auto;
+  font-family: 'Lab Grotesque VN';
+  &__carousel1 {
+    width: 100%;
+    height: 800px;
+
+    &-image {
+      background-color: #ebeded;
+      width: 720px;
+      height: 720px;
+      img {
+        width: 480px;
+        height: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+        margin-bottom: auto;
+        transform: translateY(-50%);
+      }
+    }
+    &-phai {
+      &-title {
+        width: 720px;
+        height: 560px;
+        .khung {
+          width: 480px;
+          height: 276px;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: auto;
+          padding-top: 50%;
+          transform: translateY(-55%);
+          h2 {
+            width: 335px;
+            height: 68px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 68px;
+            color: #111820;
+          }
+          h5 {
+            width: 140px;
+            height: 27px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 27px;
+            color: #111820;
+          }
+          h4 {
+            width: 480px;
+            height: 81px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 27px;
+            color: #111820;
+            strong {
+              color: #aa4646;
+            }
+          }
+        }
+      }
+      &-add {
+        width: 100%;
+        height: 160px;
+        .option {
+          border-top: 2px solid #111820;
+          &__trai {
+            p {
+              width: 52px;
+              height: 18px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 18px;
+              color: #111820;
+              padding-top: 10px;
+            }
+            h4 {
+              position: absolute;
+              width: 120px;
+              height: 35px;
+              font-style: normal;
+              font-weight: 900;
+              font-size: 27px;
+              line-height: 35px;
+              color: #111820;
+            }
+          }
+          &__size {
+            p {
+              width: 52px;
+              height: 18px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 18px;
+              color: #111820;
+              padding-top: 10px;
+            }
+            h4 {
+              position: absolute;
+              width: 130px;
+              height: 35px;
+              font-style: normal;
+              font-weight: 900;
+              font-size: 27px;
+              line-height: 35px;
+              color: #111820;
+            }
+          }
+        }
+        .quado {
+          width: 80px;
+          height: 80px;
+          background-color: #920e18;
+        }
+        .giohang {
+          background-color: #111820;
+          height: 80px;
+          h5 {
+            width: 200px;
+            height: 27px;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 27px;
+            text-align: center !important;
+            margin-left: 300px;
+            margin-top: 23px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  // hai ảnh :
+  &__mauvang {
+    width: 1440px;
+    height: 720px;
+
+    &-trai {
+      img {
+        width: 720px;
+        height: 720px;
+      }
+    }
+    &-phai {
+      img {
+        width: 720px;
+        height: 720px;
+      }
+    }
+  }
+}
+
+.ant-carousel-vertical .slick-dots-left {
+  right: auto;
+  left: 12px;
+  width: 8px !important;
+  height: 105px !important;
+}
+.ant-carousel-vertical .slick-dots li.slick-active button {
+  width: 8px !important;
+  height: 40px !important;
+  background-color: black !important;
+  margin-bottom: 10px !important;
+  border-radius: 5px;
+}
+.ant-carousel-vertical .slick-dots li {
+  width: 3px;
+  height: 106px !important;
+  margin: 2px 2px;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+.ant-carousel .slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  background: #ffffff;
+  border: 0;
+  border-radius: 1px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+// RESPONSIVE DESKTOP 1200PX :
+@media screen and (max-width: 1200px) {
+  .product {
+    width: 1024px;
+    height: auto;
+    &__carousel1 {
+      width: 1024px;
+      height: 800px;
+      padding-top: 70px;
+      &-image {
+        background-color: #ebeded;
+        width: 600px;
+        height: 720px;
+        img {
+          width: 380px;
+          height: 280px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 75%;
+          margin-bottom: auto;
+          transform: translateY(-50%);
+        }
+      }
+      &-phai {
+        &-title {
+          width: 500px;
+          height: 560px;
+          .khung {
+            width: 380px;
+            height: 220px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: auto;
+            padding-top: 70%;
+            transform: translateY(-55%);
+            h2 {
+              width: 280px;
+              height: 68px;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 50px;
+              line-height: 60px;
+              color: #111820;
+            }
+            h5 {
+              width: 125px;
+              height: 27px;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 15px;
+              line-height: 25px;
+              color: #111820;
+            }
+            h4 {
+              width: 360px;
+              height: 81px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 22px;
+              color: #111820;
+              strong {
+                color: #aa4646;
+              }
+            }
+          }
+        }
+        &-add {
+          width: 512px;
+          height: 160px;
+          .option {
+            border-top: 2px solid #111820;
+            &__trai {
+              p {
+                width: 48px;
+                height: 18px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: #111820;
+                padding-top: 10px;
+              }
+              h4 {
+                position: absolute;
+                width: 110px;
+                height: 35px;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 25px;
+                line-height: 30px;
+                color: #111820;
+              }
+            }
+            &__size {
+              p {
+                width: 52px;
+                height: 18px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: #111820;
+                padding-top: 10px;
+              }
+              h4 {
+                position: absolute;
+                width: 130px;
+                height: 35px;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 27px;
+                line-height: 35px;
+                color: #111820;
+              }
+            }
+          }
+          .quado {
+            width: 80px;
+            height: 80px;
+            background-color: #920e18;
+          }
+          .giohang {
+            background-color: #111820;
+            height: 80px;
+            h5 {
+              width: 200px;
+              height: 27px;
+              color: white;
+              font-weight: bold;
+              font-size: 17px;
+              line-height: 27px;
+              text-align: center !important;
+              margin-left: 150px;
+              margin-top: 23px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    // IMAGE GIÀY VÀNG :
+    &__mauvang {
+      width: 1024px;
+      height: 650px;
+
+      &-trai {
+        img {
+          width: 510px;
+          height: 650px;
+        }
+      }
+      &-phai {
+        img {
+          width: 510px;
+          height: 650px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 599px) {
+  .banner {
+    // display: none;
+  }
+  .product {
+    width: 100%;
+    height: auto;
+    font-family: 'Lab Grotesque VN';
+    &__carousel1 {
+      width: 375px;
+      height: 720px;
+
+      &-image {
+        // background-color: #ebeded;
+        width: 375px;
+        height: 375px;
+        img {
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 50%;
+          margin-bottom: auto;
+          transform: translateY(-50%);
+        }
+      }
+      &-phai {
+        &-title {
+          width: 375px;
+          height: 400px;
+          .khung {
+            width: 343px;
+            height: 236px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: auto;
+            padding-top: 0%;
+            transform: translateY(0%);
+            h2 {
+              width: 189px;
+              height: 40px;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 36px;
+              line-height: 40px;
+              color: #111820;
+            }
+            h5 {
+              width: 123px;
+              height: 22px;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 15px;
+              line-height: 22px;
+              color: #111820;
+            }
+            h4 {
+              width: 343px;
+              height: 110px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 22px;
+              color: #111820;
+              strong {
+                color: #aa4646;
+              }
+            }
+          }
+        }
+        &-add {
+          display: none;
+        }
+      }
+    }
+    // hai ảnh :
+    &__mauvang {
+      width: 1440px;
+      height: 720px;
+      margin-bottom: 200px;
+      margin-top: 0px;
+      &-trai {
+        img {
+          width: 720px;
+          height: 720px;
+        }
+      }
+      &-phai {
+        img {
+          width: 720px;
+          height: 720px;
+        }
+      }
+    }
+
+    .ant-carousel-vertical .slick-dots-left {
+      right: auto;
+      left: 0px;
+      width: 8px !important;
+      height: 105px !important;
+    }
+    .ant-carousel-vertical .slick-dots li.slick-active button {
+      width: 8px !important;
+      height: 40px !important;
+      background-color: black !important;
+      margin-bottom: 5px !important;
+      border-radius: 5px;
+    }
+    .ant-carousel-vertical .slick-dots li {
+      width: 3px;
+      height: 106px !important;
+      margin: 2px 2px;
+      vertical-align: baseline;
+      cursor: pointer;
+    }
+    .ant-carousel .slick-dots li button {
+      display: block;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      color: transparent;
+      font-size: 0;
+      background: #ffffff;
+      border: 0;
+      border-radius: 1px;
+      outline: none;
+      cursor: pointer;
+      opacity: 0.3;
+      transition: all 0.5s;
+      border-radius: 5px;
+    }
+    .ant-carousel-vertical .slick-dots {
+      top: 30%;
+      bottom: auto;
+      flex-direction: column;
+      width: 3px;
+      height: auto;
+      margin: 0;
+      transform: translateY(-50%);
+    }
+    &__mauvang {
+      width: 375px;
+      height: 750px;
+      // margin-top: 900px;
+      padding-top: 200px;
+      &-trai {
+        img {
+          width: 375px;
+          height: 375px;
+        }
+      }
+      &-phai {
+        img {
+          width: 375px;
+          height: 375px;
+        }
+      }
+    }
+  }
+}
+// @media screen and (max-width: 599px) {
+//   .product {
+//     width: 100%;
+//     height: auto;
+//     font-family: 'Lab Grotesque VN';
+//     &__carousel1 {
+//       width: 100%;
+//       height: 651px;
+
+//       &-image {
+//         background-color: #ebeded;
+//         width: 375px;
+//         height: 375px;
+//         img {
+//           width: 295px;
+//           height: 197px;
+//           margin-left: auto;
+//           margin-right: auto;
+//           margin-top: 50%;
+//           margin-bottom: auto;
+//           transform: translateY(-50%);
+//         }
+//       }
+//       &-phai {
+//         width: 375px;
+//         height: 651px;
+//         &-title {
+//           width: 375px;
+//           height: 651px;
+//           padding-bottom: 50px;
+//           .khung {
+//             width: 343px;
+//             height: 650px;
+//             margin-right: auto;
+//             margin-left: auto;
+//             margin-bottom: auto;
+//             padding-top: 20px;
+//             transform: none;
+//             h2 {
+//               width: 189px;
+//               height: 40px;
+//               font-style: normal;
+//               font-weight: bold;
+//               font-size: 36px;
+//               line-height: 40px;
+//               color: #111820;
+//             }
+//             h5 {
+//               width: 92px;
+//               height: 22px;
+//               font-style: normal;
+//               font-weight: bold;
+//               font-size: 15px;
+//               line-height: 22px;
+//               color: #111820;
+//             }
+//             h4 {
+//               width: 343px;
+//               height: 110px;
+//               font-style: normal;
+//               font-weight: normal;
+//               font-size: 15px;
+//               line-height: 22px;
+//               color: #111820;
+//               strong {
+//                 color: #aa4646;
+//               }
+//             }
+//           }
+//         }
+//         &-add {
+//           width: 100%;
+//           height: auto;
+//           .option {
+//             border-top: 2px solid #111820;
+//             margin-top: 200px;
+//             &__trai {
+//               p {
+//                 width: 48px;
+//                 height: 18px;
+//                 font-style: normal;
+//                 font-weight: normal;
+//                 font-size: 14px;
+//                 line-height: 18px;
+//                 color: #111820;
+//                 padding-top: 10px;
+//               }
+//               h4 {
+//                 // position: static;
+//                 width: 110px;
+//                 height: 35px;
+//                 font-style: normal;
+//                 font-weight: 900;
+//                 font-size: 25px;
+//                 line-height: 30px;
+//                 color: #111820;
+//               }
+//             }
+//             &__size {
+//               p {
+//                 width: 52px;
+//                 height: 18px;
+//                 font-style: normal;
+//                 font-weight: normal;
+//                 font-size: 14px;
+//                 line-height: 18px;
+//                 color: #111820;
+//                 padding-top: 10px;
+//               }
+//               h4 {
+//                 position: absolute;
+//                 width: 130px;
+//                 height: 35px;
+//                 font-style: normal;
+//                 font-weight: 900;
+//                 font-size: 27px;
+//                 line-height: 35px;
+//                 color: #111820;
+//               }
+//             }
+//           }
+//           .quado {
+//             width: 60px;
+//             height: 60px;
+//             background-color: #920e18;
+//           }
+//           .giohang {
+//             background-color: #111820;
+//             height: 80px;
+//             h5 {
+//               width: 200px;
+//               height: 27px;
+//               color: white;
+//               font-weight: bold;
+//               font-size: 17px;
+//               line-height: 27px;
+//               text-align: center !important;
+//               margin-left: 150px;
+//               margin-top: 23px;
+//               cursor: pointer;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     &__mauvang {
+//       width: 375px;
+//       height: 750px;
+//       margin-top: 900px;
+//       &-trai {
+//         img {
+//           width: 375px;
+//           height: 375px;
+//         }
+//       }
+//       &-phai {
+//         img {
+//           width: 375px;
+//           height: 375px;
+//         }
+//       }
+//     }
+//   }
+// }
