@@ -38,7 +38,7 @@ const thacmac = () => {
             sm={{ span: 6, offset: 0 }}
             xs={{ span: 24, offset: 0 }}
           >
-            <h1>bạn hỏi</h1>
+            <h1>bạn hỏ</h1>
           </Col>
           <Col
             className="thacmac__rectangle"
