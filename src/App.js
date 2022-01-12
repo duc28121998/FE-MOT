@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component'
 import Shop from './pages/shop/shop.component'
-import Shop_Homeage from './components/shop/shop'
+import Shop_Homepage from './components/shop/shop'
 import Header from './components/header_black/headerBlack'
 import Footer from './components/footer/footer'
 import { createStructuredSelector } from 'reselect'
@@ -20,6 +20,7 @@ import CardMenu from './components/card-menu/card-menu'
 import Carousel from './components/carousel-feedback/feedback'
 import BannerCauchuyen from './pages/cauchuyen/cauchuyen'
 import Locations from './pages/locations/locations'
+import Thacmac from './pages/thacmac/thacmac'
 class App extends React.Component {
   unsubscribeFromAuth = null
 
@@ -67,6 +68,7 @@ class App extends React.Component {
             <Route exact path="/Carousel" component={Carousel} />
             <Route exact path="/cauchuyen" component={BannerCauchuyen} />
             <Route exact path="/noiban" component={Locations} />
+            <Route exact path="/thacmac" component={Thacmac} />
 
             <Route
               exact

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const DivHeader = styled.div`
   background: ${(props) => (props.active ? '' : 'white')};
   position: absolute;
+  z-index: 2;
   height: 100px;
   // left: 0px;
   // top: 0px;

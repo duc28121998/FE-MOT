@@ -23,9 +23,9 @@ const HeaderBlack = () => {
   const onClose = () => setVisible(false)
 
   const location = useLocation()
-  console.log('----location', location)
+  console.log('----location', location.pathname)
   // neu no active thi mau trang, khong active thi mau den
-  const active = ['/'].includes(location.pathname)
+  const active = ['/', '/noiban'].includes(location.pathname)
 
   return (
     <>
@@ -67,7 +67,9 @@ const HeaderBlack = () => {
             <a href="/noiban">
               <h2>nơi-bán</h2>
             </a>
-            <h2>thắc-mắc</h2>
+            <a href="/thacmac">
+              <h2>thắc-mắc</h2>
+            </a>
           </div>
           <div className="row align-items-end ngonngu">
             <div className="col-6 col-lg-6">

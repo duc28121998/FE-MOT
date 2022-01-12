@@ -1,18 +1,17 @@
 .location {
   width: 100%;
-  height: 2000px;
+  height: 100%;
   font-family: 'Lab Grotesque VN';
   background-color: #111820;
   &__banner {
-    width: 1320px;
+    width: 100%;
     height: 720px;
-    padding: 100px 0px 120px 130px;
-    // margin-bottom: 200px;
-
+    padding: 0px 0px 120px 0px;
     //TRÁI CHỮ
     &-text {
+      padding-top: 170px;
       h1 {
-        padding-top: 80px;
+        // padding-top: 80px;
         width: 720px;
         height: 112px;
         font-style: normal;
@@ -31,7 +30,7 @@
         font-size: 17px;
         line-height: 27px;
         color: #ffffff;
-        padding-top: 40px;
+        // padding-top: 40px;
       }
       h4 {
         width: 480px;
@@ -48,18 +47,58 @@
     //PHẢI HÌNH
     &-image {
       img {
-        width: 720px;
+        width: 100%;
         height: 720px;
+        padding-left: 5%;
       }
+    }
+  }
+  &__saigon {
+    padding-top: 73px;
+    // border-top: 1px solid #ffffff;
+
+    h4 {
+      color: #ffffff;
+      font-size: 27px;
+      line-height: 35px;
+      font-weight: 900;
+      font-style: normal;
+    }
+    h2 {
+      color: #ffffff;
+      font-size: 64px;
+      line-height: 40px;
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
+  &__lamdong {
+    padding-top: 73px;
+    margin-top: 50px;
+    border-top: 1px solid #ffffff;
+
+    h4 {
+      color: #ffffff;
+      font-size: 27px;
+      line-height: 35px;
+      font-weight: 900;
+      font-style: normal;
+    }
+    h2 {
+      color: #ffffff;
+      font-size: 64px;
+      line-height: 40px;
+      font-weight: 700;
+      font-style: normal;
     }
   }
   .ant-tabs {
     padding-top: 150px;
-    width: 1320px;
-    margin-left: 120px;
+    width: 100%;
+    padding-left: 120px;
   }
   .ant-tabs-nav-wrap {
-    border-bottom: 1px solid #ffffff;
+    // border-bottom: 1px solid #ffffff;
   }
   .ant-tabs-tab {
     width: 116px;
@@ -68,6 +107,7 @@
     font-weight: 900;
     font-size: 27px;
     line-height: 35px;
+    padding-bottom: 30px;
     // color: #ffffff;
     color: grey;
     // opacity: 0.3;
@@ -80,16 +120,153 @@
     font-weight: 900;
     font-size: 27px;
     line-height: 35px;
-    /* identical to box height, or 130% */
-
-    color: #ffffff;
-    border-bottom: 2px solid white;
   }
   //GẠCH DƯỚI ACTIVE
   .ant-tabs-ink-bar {
     position: absolute;
-    padding-top: 4px;
+    padding-top: 5px;
     background: white;
     pointer-events: none;
+  }
+}
+
+// RESPONSIVE MOBILE :
+@media screen and (max-width: 599px) {
+  .location {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lab Grotesque VN';
+    background-color: #111820;
+    &__banner {
+      width: 100%;
+      height: 720px;
+      padding: 0px 0px 120px 0px;
+      //TRÁI CHỮ
+      &-text {
+        padding-top: 170px;
+        h1 {
+          width: 343px;
+          height: 56px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 56px;
+          line-height: 56px;
+          color: #ffffff;
+          position: relative;
+          z-index: 2;
+          padding-left: 16px;
+
+        }
+        h5 {
+          padding-left: 16px;
+          width: 343px;
+          height: 189px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 17px;
+          line-height: 27px;
+          color: #ffffff;
+          // padding-top: 40px;
+        }
+        h4 {
+          width: 343px;
+          height: 189px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 17px;
+          line-height: 27px;
+          color: #ffffff;
+          padding-top: 20px;
+        }
+      }
+
+        //PHẢI HÌNH
+      &-image {
+        img {
+          width: 100%;
+          height: 375px;
+          padding-left: 0px;
+        }
+      }
+    }
+    &__saigon {
+      padding-top: 30px;
+      // border-top: 1px solid #ffffff;
+
+      h4 {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 900;
+        font-style: normal;
+      }
+      h2 {
+    
+        color: #ffffff;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+    &__lamdong {
+      padding-top: 73px;
+      margin-top: 50px;
+      border-top: 1px solid #ffffff;
+
+      h4 {
+          color: #ffffff;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 900;
+        font-style: normal;
+      }
+      h2 {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 40px;
+        font-style: normal;
+      }
+    }
+  .ant-tabs {
+    padding-top: 180px;
+    width: 100%;
+    padding-left:16px;
+  }
+  .tablist{
+    width: 359px;
+height: 43px;
+  }
+
+  .ant-tabs-tab {
+     width: 90px;
+    height: 27px;
+    font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+    padding-bottom: 30px;
+    // color: #ffffff;
+    color: grey;
+    // opacity: 0.3;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #ffffff;
+    width: 85px;
+    height: 27px;
+ font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+  }
+  //GẠCH DƯỚI ACTIVE
+  .ant-tabs-ink-bar {
+    position: absolute;
+    padding-top: 5px;
+    background: white;
+    pointer-events: none;
+  }
+
+
   }
 }
