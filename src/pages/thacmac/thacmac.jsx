@@ -38,7 +38,7 @@ const thacmac = () => {
             sm={{ span: 6, offset: 0 }}
             xs={{ span: 24, offset: 0 }}
           >
-            <h1>bạn hỏ</h1>
+            <h1>bạn hỏi</h1>
           </Col>
           <Col
             className="thacmac__rectangle"
@@ -93,7 +93,7 @@ const thacmac = () => {
                   className="thacmac__inlist-hai"
                   xl={{ span: 5, offset: 1 }}
                   sm={{ span: 5, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <h4>Đời mới / Đời thường ?</h4>
                 </Col>
@@ -101,7 +101,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 2 }}
                   sm={{ span: 12, offset: 2 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     <strong> Đời-mới </strong>là dòng giày đầu tiên Một ra mắt
@@ -124,13 +124,13 @@ const thacmac = () => {
                   sm={{ span: 6, offset: 3 }}
                   xs={{ span: 24, offset: 0 }}
                 >
-                  <h4>Đời mới / Đời thường ?</h4>
+                  <h4>da / vải ?</h4>
                 </Col>
                 <Col
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 1 }}
                   sm={{ span: 12, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     Một chọn da bò thật cho các sản phẩm giày. da thật êm, bền
@@ -157,7 +157,7 @@ const thacmac = () => {
                   className="thacmac__inlist-hai"
                   xl={{ span: 5, offset: 1 }}
                   sm={{ span: 5, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <h4>miếng lót</h4>
                 </Col>
@@ -165,20 +165,25 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 2 }}
                   sm={{ span: 12, offset: 2 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
-                    <strong> Đời-mới </strong>là dòng giày đầu tiên Một ra mắt
-                    thị trường. Đời-mới có dây vì vậy dễ điều chỉnh hơn cho bàn
-                    chân rộng bề ngang. dây giày Đời-mới có thể được cột lại và
-                    giấu vào bên trong - tuỳ sở thích người mang
+                    độ êm của Một cặp lót giày đến từ thiết kế công thái học
+                    nâng đỡ bàn chân trong mọi chuyển động thường ngày
                     <br />
                   </p>
                   <p>
-                    <strong>Đời-thường </strong> là dòng giày dành cho những ai
-                    mê sự nhanh gọn. Đời-thường không có dây mà thay vào đó là
-                    bản dây thun, giúp người mang xỏ chân, kéo gót và bước đi -
-                    tự do làm điều mình thích
+                    chất liệu mút-xốp polyurethane tế-bào mở (open-cell PU foam)
+                    mang đến độ nhún bền bỉ, êm mà lại thoáng khí
+                  </p>
+                  <p>
+                    Một cặp lót được thiết kế riêng cho các sản phẩm giày Một;
+                    có thể không tương thích với các dòng giày thuộc các hãng
+                    khác
+                  </p>
+                  <p>
+                    sản phẩm không áp dụng đổi – trả, bạn lưu ý đọc kỹ hướng dẫn
+                    trước khi mua hàng
                   </p>
                 </Col>
               </Row>
@@ -192,46 +197,90 @@ const thacmac = () => {
               <Row className="thacmac__inlist ">
                 <Col
                   className="thacmac__inlist-mot"
-                  xl={{ span: 4, offset: 0 }}
-                  sm={{ span: 4, offset: 0 }}
+                  xl={{ span: 10, offset: 0 }}
+                  sm={{ span: 12, offset: 0 }}
                   xs={{ span: 24, offset: 0 }}
                 >
                   <h4>làm sao đo chân</h4>
                 </Col>
+
                 <Col
                   className="thacmac__inlist-ba "
-                  xl={{ span: 12, offset: 6 }}
+                  xl={{ span: 6, offset: 0 }}
                   sm={{ span: 12, offset: 6 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <div className="dochan">
                     <img src={Buoc1} alt="" />
+                  </div>
+                </Col>
+                <Col
+                  className="thacmac__inlist-ba "
+                  xl={{ span: 6, offset: 0 }}
+                  sm={{ span: 12, offset: 6 }}
+                  xs={{ span: 22, offset: 2 }}
+                >
+                  <div className="dochan">
                     <p>
                       <strong> bước 1 </strong>
                       <br /> — chọn một mặt phẳng <br /> — lót một miếng giấy{' '}
                       <br /> — đứng lên giấy, sao cho gót chân chạm sát tường
                     </p>
                   </div>
+                </Col>
+
+                <Col
+                  className="thacmac__inlist-ba "
+                  xl={{ span: 6, offset: 10 }}
+                  sm={{ span: 12, offset: 6 }}
+                  xs={{ span: 22, offset: 2 }}
+                >
                   <div className="dochan">
                     <img src={Buoc2} alt="" />
+                  </div>
+                </Col>
+                <Col
+                  className="thacmac__inlist-ba "
+                  xl={{ span: 6, offset: 0 }}
+                  sm={{ span: 12, offset: 6 }}
+                  xs={{ span: 22, offset: 2 }}
+                >
+                  <div className="dochan">
                     <p>
                       <strong> bước 2 </strong>
-                      <br />— đo bề dài chân: dùng bút đánh dấu điểm xa nhất của
-                      bàn chân tính từ gót chân, đo hai chân và chọn số đo lớn
-                      hơn
-                    </p>
-                  </div>
-                  <div className="dochan">
-                    <img src={Buoc3} alt="" />
-                    <p>
-                      <strong> bước 3 </strong>
-                      <br /> — đo bề ngang chân: dùng thước dây siết nhẹ thành
-                      vòng ngay phần bè nhất của bàn chân; đo hai chân và chọn
-                      số đo lớn hơn
+                      <br />— đo bề dài chân:
+                      <br /> dùng bút đánh dấu điểm xa nhất của bàn chân tính từ
+                      gót chân, đo hai chân và chọn số đo lớn hơn
                     </p>
                   </div>
                 </Col>
 
+                <Col
+                  className="thacmac__inlist-ba "
+                  xl={{ span: 6, offset: 10 }}
+                  sm={{ span: 12, offset: 6 }}
+                  xs={{ span: 22, offset: 2 }}
+                >
+                  <div className="dochan">
+                    <img src={Buoc3} alt="" />
+                  </div>
+                </Col>
+                <Col
+                  className="thacmac__inlist-ba "
+                  xl={{ span: 6, offset: 0 }}
+                  sm={{ span: 12, offset: 6 }}
+                  xs={{ span: 22, offset: 2 }}
+                >
+                  <div className="dochan">
+                    <p>
+                      <strong> bước 3 </strong>
+                      <br /> — đo bề ngang chân:
+                      <br /> dùng thước dây siết nhẹ thành vòng ngay phần bè
+                      nhất của bàn chân; đo hai chân và chọn số đo lớn hơn
+                    </p>
+                  </div>
+                </Col>
+                {/* cach  */}
                 <Col
                   className="thacmac__inlist-hai"
                   xl={{ span: 6, offset: 3 }}
@@ -242,18 +291,18 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 1 }}
                   sm={{ span: 12, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     <strong>Một vài lưu ý khi đo chân</strong>
-                    <br />- luôn <strong>đo cả hai chân</strong> và chọn số đo
+                    <br />— luôn <strong>đo cả hai chân</strong> và chọn số đo
                     lớn hơn
                     <br />
-                    - nếu bể ngang chân to hơn, nên chọn size nam, nếu bể ngang
+                    — nếu bể ngang chân to hơn, nên chọn size nam, nếu bể ngang
                     chân mỏng hơn, nên chọn size nữ
-                    <br />- nên <strong>siết nhẹ thước dây</strong> khi đo bể
+                    <br />— nên <strong>siết nhẹ thước dây</strong> khi đo bể
                     chân ngang, vì giày cũng sẽ ôm sát theo chân
-                    <br />- luôn chọn size theo số đo lớn hơn (ví dụ: bàn chân
+                    <br />— luôn chọn size theo số đo lớn hơn (ví dụ: bàn chân
                     nữ dài 22cm, tương ứng size 35W, nhưng vòng chân là 21.5cm
                     thì nên chọn size 36)
                   </p>

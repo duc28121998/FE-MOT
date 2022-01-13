@@ -90,13 +90,13 @@ export const DivThacmac = styled.div`
       }
       &-ba {
         .dochan {
-          width: 600px;
+          width: 100%;
           display: flex;
           padding-top: 20px;
           img {
             width: 290px;
             height: 193px;
-            margin-right: 60px;
+            margin-right: 0px;
           }
         }
         p {
@@ -106,7 +106,7 @@ export const DivThacmac = styled.div`
           font-size: 17px;
           line-height: 27px;
           color: #111820;
-          padding-bottom: 15px;
+          margin-bottom: 15px;
         }
       }
       &-lienhe {
@@ -115,6 +115,120 @@ export const DivThacmac = styled.div`
         font-size: 40px;
         line-height: 48px;
         color: #111820;
+      }
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .thacmac {
+      width: 100%;
+      &__title {
+        padding-top: 100px;
+        padding-left: 16px;
+      }
+      &__rectangle {
+        width: 40px;
+        height: 4px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        background: #111820;
+      }
+      &__banhoi {
+        h1 {
+          width: 100%;
+          height: 100%;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 56px;
+          line-height: 56px;
+        }
+      }
+      &__mot {
+        h1 {
+          width: 100%;
+          height: 100%;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 56px;
+          line-height: 56px;
+        }
+      }
+      &__list {
+        margin-left: 16px;
+        border-top: 1px solid #111820;
+        &-trai {
+          h3 {
+            margin-top: 20px;
+            width: 100%;
+            height: 100%;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+            color: #111820;
+          }
+        }
+        &-phai {
+          margin-top: 20px;
+          font-size: 40px;
+          line-height: 48px;
+          img {
+            width: 46px;
+            height: 46px;
+          }
+        }
+      }
+
+      //INLIST COLLAPSE
+      &__inlist {
+        margin-left: 16px;
+        border-top: 1px solid black;
+        &-mot {
+          h4 {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #111820;
+          }
+        }
+        &-hai {
+          h4 {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #111820;
+          }
+        }
+        &-ba {
+          .dochan {
+            width: 100%;
+            padding-top: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              margin-right: 60px;
+            }
+          }
+          p {
+            margin-top: 20px;
+            font-style: normal;
+            /* font-weight: bold; */
+            font-size: 15px;
+            line-height: 22px;
+            color: #111820;
+            padding-bottom: 15px;
+          }
+        }
+        &-lienhe {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 48px;
+          color: #111820;
+        }
       }
     }
   }
@@ -143,7 +257,7 @@ export const DivTabs = styled(Tabs)`
       line-height: 35px;
       color: #111820;
       &-img1 {
-        width: 326px;
+        width: 326p;
         height: 36.5px;
         margin-bottom: 40.5px;
       }
