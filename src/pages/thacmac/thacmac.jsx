@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import './thacmac.style.scss'
-import { Row, Col } from 'antd'
+import { Row, Col, Tabs, Input } from 'antd'
 import { DivThacmac } from './index.style'
-import Icon from '../../assets/images/icon/IconCong.png'
-import { Collapse } from 'antd'
-import { DivCollapse } from './index.style'
+
+import { DivPanel } from './index.style'
 import { DivCollapseHeader, DivTabs } from './index.style'
-import { Instagram, Socialface } from '../../assets/svgs/index'
+import { Instagram } from '../../assets/svgs/index'
 
 import Buoc1 from '../../assets/images/thacmac/buoc1.png'
 import Buoc2 from '../../assets/images/thacmac/buoc2.png'
@@ -16,21 +15,25 @@ import Doithuongkhongday from '../../assets/images/thacmac/doithuongkhongday.png
 import Sizenu from '../../assets/images/thacmac/sizegiaynu.png'
 import Sizenam from '../../assets/images/thacmac/sizegiaynam.png'
 
-import { Tabs, Radio, Space } from 'antd'
-
 //Tabs
 const { TabPane } = Tabs
-function callback(key) {
-  console.log(key)
-}
 
 //Collapse
-const { Panel } = Collapse
 
-const thacmac = () => {
+const Thacmac = ({
+  className = '',
+
+  onClick = () => {},
+}) => {
+  const [active, setActive] = useState([])
+  function callback(key) {
+    setActive(key)
+    console.log(key)
+  }
+
   return (
-    <div className="thacmac">
-      <DivThacmac>
+    <DivThacmac>
+      <div className="thacmac">
         <Row className="thacmac__title">
           <Col
             className="thacmac__banhoi"
@@ -55,31 +58,32 @@ const thacmac = () => {
             <h1>Một trả lời !</h1>
           </Col>
         </Row>
-        {/* <Row className="thacmac__list ">
-          <Col
-            className="thacmac__list-trai"
-            sm={{ span: 6, offset: 0 }}
-            xl={{ span: 6, offset: 0 }}
-            xs={{ span: 24, offset: 0 }}
-          >
-            <h3>về Một sản phẩm</h3>
-          </Col>
-          <Col
-            className="thacmac__list-phai "
-            xl={{ span: 2, offset: 16 }}
-            sm={{ span: 2, offset: 16 }}
-            xs={{ span: 24, offset: 0 }}
-          >
-            <img src={Icon} alt="" />
-          </Col>
-        </Row> */}
 
-        {/* Collapse  */}
-        <Collapse defaultActiveKey={['1']} onChange={callback}>
-          {/* VỀ MỘT SẢN PHẨM  */}
-
-          <DivCollapseHeader>
-            <Panel header="về Một sản phẩm" key="1">
+        <div>
+          <DivCollapseHeader
+            defaultActiveKey={['1']}
+            onChange={callback}
+            expandIconPosition="right"
+            expandIcon={({ isActive }) => {
+              return (
+                <div>
+                  <div className="h-100 d-flex align-items-center justify-content-center ">
+                    <span style={{ fontSize: '28px' }}>
+                      {isActive ? '-' : '+'}
+                    </span>
+                  </div>
+                </div>
+              )
+            }}
+            className={className}
+            onClick={onClick}
+            active={active}
+          >
+            <DivPanel
+              active={active.includes('1')}
+              header="về Một sản phẩm"
+              key="1"
+            >
               <Row className="thacmac__inlist ">
                 <Col
                   className="thacmac__inlist-mot"
@@ -187,13 +191,13 @@ const thacmac = () => {
                   </p>
                 </Col>
               </Row>
-            </Panel>
-          </DivCollapseHeader>
-          {/*END VỀ MỘT SẢN PHẨM  */}
+            </DivPanel>
 
-          {/* ĐO SIZE THẾ NÀO ? => LÀM SAO ĐO CHÂN  */}
-          <DivCollapseHeader>
-            <Panel header="đo size thế nào ?" key="2">
+            <DivPanel
+              active={active.includes('2')}
+              header="đo size thế nào ?"
+              key="2"
+            >
               <Row className="thacmac__inlist ">
                 <Col
                   className="thacmac__inlist-mot"
@@ -445,12 +449,13 @@ const thacmac = () => {
                 </Col> */}
               </Row>
               {/* END SIZE GIÀY NỮ  */}
-            </Panel>
-          </DivCollapseHeader>
-          {/* END DO SIZE THE NAO  */}
-          {/* CHĂM SÓC GIÀY  */}
-          <DivCollapseHeader>
-            <Panel header="chắm sóc giày" key="3">
+            </DivPanel>
+
+            <DivPanel
+              active={active.includes('3')}
+              header="chăm sóc giày"
+              key="3"
+            >
               <Row className="thacmac__inlist ">
                 <Col
                   className="thacmac__inlist-mot"
@@ -464,7 +469,7 @@ const thacmac = () => {
                   className="thacmac__inlist-hai"
                   xl={{ span: 5, offset: 1 }}
                   sm={{ span: 5, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <h4>da/vải</h4>
                 </Col>
@@ -472,7 +477,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 2 }}
                   sm={{ span: 12, offset: 2 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     với các <strong> sản phẩm da </strong> bạn nhớ tránh dính
@@ -491,13 +496,12 @@ const thacmac = () => {
                   <link rel="stylesheet" href="" />
                 </Col>
               </Row>
-            </Panel>
-          </DivCollapseHeader>
-          {/* END CHĂM SÓC GIÀY  */}
-
-          {/* PHƯƠNG THỨC THANH TOÁN  */}
-          <DivCollapseHeader>
-            <Panel header="phuong-thức thanh toán" key="4">
+            </DivPanel>
+            <DivPanel
+              active={active.includes('4')}
+              header={<div className="col-8 px-0">phương-thức thanh toán</div>}
+              key="4"
+            >
               <Row className="thacmac__inlist ">
                 <Col
                   className="thacmac__inlist-mot"
@@ -511,7 +515,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 6 }}
                   sm={{ span: 12, offset: 6 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     Một chấp nhận phương thức COD (thanh toán khi nhận hàng) và
@@ -520,13 +524,14 @@ const thacmac = () => {
                   </p>
                 </Col>
               </Row>
-            </Panel>
-          </DivCollapseHeader>
-          {/* END PHƯƠNG THỨC THANH TOÁN  */}
-
-          {/* CHÍNH - SÁCH BẢO HÀNH ĐỔI - TRẢ  */}
-          <DivCollapseHeader>
-            <Panel header="chính-sách bảo hành và đổi-trả" key="5">
+            </DivPanel>
+            <DivPanel
+              active={active.includes('5')}
+              header={
+                <div className="col-8 px-0">chính-sách bảo hành và đổi-trả</div>
+              }
+              key="5"
+            >
               <Row className="thacmac__inlist ">
                 <Col
                   className="thacmac__inlist-mot"
@@ -540,7 +545,7 @@ const thacmac = () => {
                   className="thacmac__inlist-hai"
                   xl={{ span: 5, offset: 1 }}
                   sm={{ span: 5, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 23, offset: 1 }}
                 >
                   <h4>điều kiện chung</h4>
                 </Col>
@@ -548,7 +553,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 2 }}
                   sm={{ span: 12, offset: 2 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     <strong>
@@ -573,7 +578,7 @@ const thacmac = () => {
                   className="thacmac__inlist-hai"
                   xl={{ span: 6, offset: 3 }}
                   sm={{ span: 6, offset: 3 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 23, offset: 1 }}
                 >
                   <h4>với trả hàng</h4>
                 </Col>
@@ -581,7 +586,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 1 }}
                   sm={{ span: 12, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     Một sẽ khấu trừ phí lưu kho 100.000đ/một đôi giày, khoản này
@@ -595,7 +600,7 @@ const thacmac = () => {
                   className="thacmac__inlist-hai"
                   xl={{ span: 6, offset: 3 }}
                   sm={{ span: 6, offset: 3 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 23, offset: 1 }}
                 >
                   <h4>với đổi hàng</h4>
                 </Col>
@@ -603,7 +608,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 1 }}
                   sm={{ span: 12, offset: 1 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     Một sẽ không khấu trừ phí lưu kho với trường hợp đổi giày
@@ -651,7 +656,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 6 }}
                   sm={{ span: 12, offset: 6 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     — Một áp dụng chính sách 1 đổi 1 cho các sản phẩm áo mưa mắc
@@ -680,7 +685,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 6 }}
                   sm={{ span: 12, offset: 6 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     — chỉ áp dụng chính sách 1 đổi 1 khi sản phẩm mắc lỗi sản
@@ -690,13 +695,8 @@ const thacmac = () => {
                 </Col>
               </Row>
               {/* END PHỤ KIỆN  */}
-            </Panel>
-          </DivCollapseHeader>
-          {/* END CHÍNH - SÁCH BẢO HÀNH ĐỔI - TRẢ  */}
-
-          {/* LIÊN HỆ  */}
-          <DivCollapseHeader>
-            <Panel header="liên hệ" key="6">
+            </DivPanel>
+            <DivPanel active={active.includes('6')} header="liên hệ" key="6">
               <Row className="thacmac__inlist ">
                 <Col
                   className="thacmac__inlist-mot"
@@ -711,7 +711,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 6 }}
                   sm={{ span: 12, offset: 6 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     số hotline : nhận điện từ 09:30 - 22:00, thứ Hai đến Chủ
@@ -735,7 +735,7 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 6 }}
                   sm={{ span: 12, offset: 6 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>chat với Một từ 09:30 – 18:00; từ Thứ Hai đến Thứ Sáu</p>
                   <h3 className="thacmac__inlist-lienhe">
@@ -758,23 +758,26 @@ const thacmac = () => {
                   className="thacmac__inlist-ba "
                   xl={{ span: 12, offset: 6 }}
                   sm={{ span: 12, offset: 6 }}
-                  xs={{ span: 24, offset: 0 }}
+                  xs={{ span: 22, offset: 2 }}
                 >
                   <p>
                     bạn vui lòng gửi email đến{' '}
                     <strong> hello@motdoigiay.vn </strong> hoặc điền vào form
                     dưới đây, Một sẽ trả lời bạn trong thời gian sớm nhất
                   </p>
+
+                  <div className="thacmac__inlist-ba__input">
+                    <Input placeholder="Basic usage" />
+                  </div>
                 </Col>
               </Row>
               {/* END PHỤ KIỆN  */}
-            </Panel>
+            </DivPanel>
           </DivCollapseHeader>
-          {/* END LIÊN HỆ  */}
-        </Collapse>
-      </DivThacmac>
-    </div>
+        </div>
+      </div>
+    </DivThacmac>
   )
 }
 
-export default thacmac
+export default Thacmac

@@ -1,8 +1,8 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 599px) {
   .main-nav {
     position: absolute;
-    width: 350px;
-    height: 45px;
+    width: 375px;
+    height: 50px;
     left: 0px;
     top: 0px;
     display: flex;
@@ -12,12 +12,6 @@
     &__menu {
       width: 32px;
       height: 32px;
-    }
-    &__options {
-    }
-    &__king {
-    }
-    &__giohang {
     }
   }
 }

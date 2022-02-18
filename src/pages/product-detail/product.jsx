@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'antd/dist/antd.css'
 import { Row, Col } from 'antd'
-import { Carousel, Radio } from 'antd'
-import Banner from '../../components/banner/banner'
+import { Carousel } from 'antd'
 import Motall from '../../components/content_trietly/contentTrietly'
 import CardMenu from '../../components/card-menu/card-menu'
 import Box from '../../components/box/box'
@@ -11,22 +10,29 @@ import './product.style.scss'
 import Giaydo from '../../assets/images/Product-detail/giaydo.png'
 import Giayvang from '../../assets/images/Product-detail/giayvang.png'
 import Degiay from '../../assets/images/Product-detail/degiay.png'
-// import Haichan from '../../assets/images/Product-detail/haichan.png'
-// import img_giayxanh from '../../assets/images/instagram/Mot-ft-Vagabond.png'
+
+import { Drawer, Button, Space } from 'antd'
 
 const PositionCarouselDemo = () => {
-  const [dotPosition, setDotPosition] = React.useState('left')
+  const [dotPosition] = React.useState('left')
 
-  const handlePositionChange = ({ target: { value } }) => {
-    setDotPosition(value)
+  //DRAWER
+  const [visible, setVisible] = useState(false)
+  const [size, setSize] = useState()
+
+  const showLargeDrawer = () => {
+    setSize('large')
+    setVisible(true)
   }
-  const contentStyle = {
-    height: '800px',
-    color: 'black',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: 'blue',
+
+  // const showDefaultDrawer = () => {
+  //   setSize('default')
+  //   setVisible(true)
+  // }
+  const onClose = () => {
+    setVisible(false)
   }
+  //END DRAWER
 
   return (
     <div className="product">
@@ -77,15 +83,36 @@ const PositionCarouselDemo = () => {
                       xl={{ span: 10, offset: 0 }}
                       sm={{ span: 10, offset: 0 }}
                       xs={{ span: 10, offset: 0 }}
+                      onClick={showLargeDrawer}
                     >
                       <p>màu</p>
                       <h4>quá đỏ </h4>
                     </Col>
+                    <Drawer
+                      title={`${size} Drawer`}
+                      placement="right"
+                      size={size}
+                      onClose={onClose}
+                      visible={visible}
+                      extra={
+                        <Space>
+                          <Button onClick={onClose}>Cancel</Button>
+                          <Button type="primary" onClick={onClose}>
+                            OK
+                          </Button>
+                        </Space>
+                      }
+                    >
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                      <p>Some contents...</p>
+                    </Drawer>
                     <Col
                       xl={{ span: 10, offset: 0 }}
                       sm={{ span: 10, offset: 0 }}
                       xs={{ span: 10, offset: 0 }}
                       className="option__size"
+                      // onClick={showDefaultDrawer}
                     >
                       <p>size giày</p>
                       <h4>chọn size </h4>

@@ -8,9 +8,6 @@ import { store, persistor } from './redux/store.js'
 import './index.css'
 import App from './App'
 export { default as Header } from './components/header/header.component'
-// export { default as Footer } from './components/footer/footer'
-// export { default as Header } from './components/header/header.component.jsx'
-// export { default as Header } from './components/header/header.component.jsx'
 
 ReactDOM.render(
   <Provider store={store}>

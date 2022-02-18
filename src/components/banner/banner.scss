@@ -6,11 +6,9 @@
     height: 243px;
   }
   background-image: url('../../assets/images/background-hero.jpg');
-  min-height: 700px;
+  min-height: 720px;
   padding-left: 120px;
-  // max-width: 100%;
   margin: 0 auto;
-  background-size: 100% !important;
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -23,6 +21,7 @@
     font-size: 112px;
     line-height: 112px;
     padding-bottom: 8px;
+    color: #fff;
   }
   &__content {
     font-family: 'Lab Grotesque VN';
@@ -31,6 +30,7 @@
     font-size: 27px;
     line-height: 35px;
     padding-bottom: 40px;
+    color: #fff;
   }
 
   &__buynow {
@@ -44,6 +44,302 @@
     line-height: 27px;
     padding: 10px 40px 11px;
     background-color: white;
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+    background: #fff;
+    opacity: 1;
+    width: 40px;
+    height: 8px;
+    margin-right: 50px;
+  }
+  .ant-carousel .slick-dots li.slick-active {
+    margin-right: 20px;
+    width: 30px;
+  }
+  .ant-carousel .slick-dots {
+    z-index: 0;
+    display: flex;
+    justify-content: left;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .ant-carousel .slick-dots {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 260px;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: left;
+    margin-right: 15%;
+    margin-left: 0 auto;
+    padding-left: 0;
+    padding-top: 200px;
+    list-style: none;
+  }
+  .ant-carousel .slick-dots li {
+    position: none;
+    display: inline-block;
+    // flex: 0 1 auto;
+    box-sizing: content-box;
+    width: 16px;
+    height: 3px;
+    margin: 0 2px;
+    margin-right: 1px;
+    margin-left: 6px;
+    padding: 0;
+    text-align: center;
+    // text-indent: -999px;
+    vertical-align: top;
+    // transition: all 0.5s;
+  }
+  .ant-carousel .slick-dots li button {
+    background: rgba(17, 24, 32, 0.5);
+  }
+}
+
+@media screen and(max-width: 1368px) {
+  .banner {
+    font-family: 'Lab Grotesque VN';
+
+    &__size {
+      width: 455px;
+      height: 243px;
+    }
+    background-image: url('../../assets/images/background-hero.jpg');
+    min-height: 700px;
+    padding-left: 120px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding-top: 180px;
+
+    &__title {
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 112px;
+      line-height: 112px;
+      padding-bottom: 8px;
+      color: #fff;
+    }
+    &__content {
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 27px;
+      line-height: 35px;
+      padding-bottom: 40px;
+      color: #fff;
+    }
+
+    &__buynow {
+      width: 151px;
+      height: 48px;
+      border-radius: 24px;
+      outline: none;
+      border: none;
+      color: black;
+      font-size: 17px;
+      line-height: 27px;
+      padding: 10px 40px 11px;
+      background-color: white;
+    }
+    .ant-carousel .slick-dots li.slick-active button {
+      background: #fff;
+      opacity: 1;
+      width: 40px;
+      height: 8px;
+      margin-right: 50px;
+    }
+    .ant-carousel .slick-dots li.slick-active {
+      margin-right: 20px;
+      width: 30px;
+    }
+    .ant-carousel .slick-dots {
+      z-index: 0;
+      display: flex;
+      justify-content: left;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .ant-carousel .slick-dots {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 260px;
+      left: 0;
+      z-index: 0;
+      display: flex;
+      justify-content: left;
+      margin-right: 15%;
+      margin-left: 0 auto;
+      padding-left: 0;
+      padding-top: 200px;
+      list-style: none;
+    }
+    .ant-carousel .slick-dots li {
+      position: none;
+      display: inline-block;
+      // flex: 0 1 auto;
+      box-sizing: content-box;
+      width: 16px;
+      height: 3px;
+      margin: 0 2px;
+      margin-right: 1px;
+      margin-left: 6px;
+      padding: 0;
+      text-align: center;
+      // text-indent: -999px;
+      vertical-align: top;
+      // transition: all 0.5s;
+    }
+    .ant-carousel .slick-dots li button {
+      background: rgba(17, 24, 32, 0.5);
+    }
+  }
+}
+
+@media screen and(max-width: 430px) {
+  .banner {
+    font-family: 'Lab Grotesque VN';
+
+    &__size {
+      width: 100%;
+      height: 500px;
+    }
+    background-image: url('../../assets/images/bannerMobile.png');
+    padding-left: 16px;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 180px;
+    background-position: center;
+    background-size: cover;
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 56px;
+      line-height: 56px;
+
+      color: #ffffff;
+    }
+    &__content {
+      width: 257px;
+      height: 54px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    &__buynow {
+      width: 110px;
+      height: 44px;
+      border-radius: 24px;
+      outline: none;
+      border: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #111820;
+      padding: 11px 20px 5px;
+      background-color: white;
+    }
+  }
+  .ant-carousel .slick-dots {
+    position: initial;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: left;
+    margin-right: 15%;
+    margin-left: 0 auto;
+    padding-left: 0;
+    // padding-top: 50px;
+    list-style: none;
+  }
+}
+
+@media screen and(max-width: 380px) {
+  .banner {
+    font-family: 'Lab Grotesque VN';
+
+    &__size {
+      width: 100%;
+      height: 500px;
+    }
+    background-image: url('../../assets/images/bannerMobile.png');
+
+    min-height: 500px;
+    padding-left: 16px;
+    min-width: 100%;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 180px;
+    background-position: center;
+    background-size: cover;
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 56px;
+      line-height: 56px;
+
+      color: #ffffff;
+    }
+    &__content {
+      width: 257px;
+      height: 54px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    &__buynow {
+      width: 110px;
+      height: 44px;
+      border-radius: 24px;
+      outline: none;
+      border: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #111820;
+      padding: 11px 20px 5px;
+      background-color: white;
+    }
+  }
+  .ant-carousel .slick-dots {
+    position: initial;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: left;
+    margin-right: 15%;
+    margin-left: 0 auto;
+    padding-left: 0;
+    // padding-top: 50px;
+    list-style: none;
   }
 }
 

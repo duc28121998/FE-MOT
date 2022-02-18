@@ -11,5 +11,4 @@ const SignInAndSignUp = () => (
     <SignUp />
   </div>
 )
-
 export default SignInAndSignUp

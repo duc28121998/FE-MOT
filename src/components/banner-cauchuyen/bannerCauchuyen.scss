@@ -1,19 +1,15 @@
 .banner-cauchuyen {
   font-family: 'Lab Grotesque VN';
-  //   color: white;
 
   &__size {
-    width: 1210px;
-    height: auto;
+    width: 100%;
   }
   background-image: url('../../assets/images/cauchuyen/banner-cauchuyen.png');
-  //   min-height: 700px;
+  min-height: 750px;
   padding-left: 120px;
   margin: 0 auto;
-  background-size: 100%;
   background-position: center;
   background-size: cover;
-  padding-top: 250px;
 
   &__content {
     width: 721px;
@@ -23,14 +19,15 @@
     font-size: 27px;
     line-height: 35px;
     color: #ffffff;
+    padding-top: 140px;
   }
   &__logo {
-    width: 1300px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     font-size: 180px;
     color: #fff;
     font-weight: 900;
-    padding-top: 150px;
+    padding-top: 295px;
   }
 
   &__buynow {
@@ -58,6 +55,135 @@
       background: #fff;
       border-radius: 5px;
       width: 40px;
+    }
+  }
+}
+
+@media screen and(max-width:1368px) {
+  .banner-cauchuyen {
+    font-family: 'Lab Grotesque VN';
+
+    &__size {
+      width: 100%;
+    }
+    background-image: url('../../assets/images/cauchuyen/banner-cauchuyen.png');
+    min-height: 750px;
+    padding-left: 120px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    &__content {
+      width: 721px;
+      height: 105px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 27px;
+      line-height: 35px;
+      color: #ffffff;
+      padding-top: 140px;
+    }
+    &__logo {
+      width: 100%;
+      height: auto;
+      font-size: 150px;
+      color: #fff;
+      font-weight: 900;
+      padding-top: 295px;
+    }
+
+    &__buynow {
+      width: 151px;
+      height: 48px;
+      border-radius: 24px;
+      outline: none;
+      border: none;
+      color: black;
+      font-size: 17px;
+      line-height: 27px;
+      padding: 10px 40px 11px;
+      background-color: white;
+    }
+  }
+
+  .navbar {
+    padding: 0px;
+    // max-height: 720px;
+
+    .swiper-pagination {
+      text-align: left;
+      padding-left: 120px;
+      &-bullet-active {
+        background: #fff;
+        border-radius: 5px;
+        width: 40px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 599px) {
+  .banner-cauchuyen {
+    font-family: 'Lab Grotesque VN';
+    &__size {
+      width: 100%;
+      height: 620px;
+    }
+    min-height: 650px;
+    background-image: url('../../assets/images/cauchuyen/banner-cauchuyen.png');
+    padding-left: 8px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+      width: 343px;
+      height: 135px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 27px;
+      color: #ffffff;
+      padding-top: 120px;
+      padding-left: 8px;
+    }
+    &__logo {
+      width: 343px;
+      height: 176px;
+      font-size: 80px;
+      color: #fff;
+      font-weight: 600;
+      padding-top: 240px;
+      line-height: 100px;
+      // justify-content: center;
+      // text-align: center;
+    }
+
+    &__buynow {
+      width: 151px;
+      height: 48px;
+      border-radius: 24px;
+      outline: none;
+      border: none;
+      color: black;
+      font-size: 17px;
+      line-height: 27px;
+      padding: 10px 40px 11px;
+      background-color: white;
+    }
+  }
+
+  .navbar {
+    padding: 0px;
+    // max-height: 720px;
+
+    .swiper-pagination {
+      text-align: left;
+      padding-left: 120px;
+      &-bullet-active {
+        background: #fff;
+        border-radius: 5px;
+        width: 40px;
+      }
     }
   }
 }

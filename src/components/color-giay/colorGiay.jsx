@@ -9,7 +9,7 @@ const Product = ({ id, listData = [], onChange }) => {
       <Row className="giaydoimoi__den">
         <Col span={9}>{item.name}</Col>
         <Col span={9} offset={6}>
-          {item.price} VNĐ
+          {item.price}
         </Col>
         {listData.map((product) => (
           <SelectColor

@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './doimoi.scss'
 import { Row, Col } from 'antd'
-import GiayTrang from '../../assets/images/shop/giay.png'
 import Giaydo from '../../assets/images/shop/giaydo.png'
 import Giay from '../../assets/images/shop/giay.png'
 import Giayden from '../../assets/images/shop/Group 2 Copy.png'
-import { DivSelectColor } from './doimoi.style'
-import SelectColor from '../selectColor'
-import Giaytrang from '../../assets/images/Desktop/giaytrang.png'
+
 import Giayvang from '../../assets/images/Desktop/giayvang.png'
 import Product from '../../components/color-giay/colorGiay'
 const Contentdoimoi = () => {
@@ -37,7 +34,7 @@ const Contentdoimoi = () => {
     {
       id: 3,
       name: 'Giay vang',
-      img: 'Giay vang',
+      img: Giayvang,
       color: 'yellow',
       price: '1 000 000',
     },
@@ -69,7 +66,7 @@ const Contentdoimoi = () => {
     {
       id: 4,
       name: 'quá xanh',
-      img: GiayTrang,
+      img: Giayden,
       color: 'blue',
       price: '720 000',
     },

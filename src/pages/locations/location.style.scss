@@ -3,6 +3,8 @@
   height: 100%;
   font-family: 'Lab Grotesque VN';
   background-color: #111820;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
   &__banner {
     width: 100%;
     height: 720px;
@@ -54,6 +56,24 @@
     }
   }
   &__saigon {
+    //BADGE :
+    .ant-badge {
+      color: white;
+    }
+    .ant-badge-count {
+      background: none;
+      box-shadow: none;
+      margin-left: 2px;
+      margin-top: 5px;
+    }
+    .ant-scroll-number-only-unit {
+      margin-left: 14px;
+      font-family: 'Lab Grotesque VN';
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-size: 14px;
+      line-height: 18px;
+    }
     padding-top: 73px;
     // border-top: 1px solid #ffffff;
 
@@ -73,6 +93,24 @@
     }
   }
   &__lamdong {
+    //BADGE :
+    .ant-badge {
+      color: white;
+    }
+    .ant-badge-count {
+      background: none;
+      box-shadow: none;
+      margin-left: 2px;
+      margin-top: 5px;
+    }
+    .ant-scroll-number-only-unit {
+      margin-left: 14px;
+      font-family: 'Lab Grotesque VN';
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-size: 14px;
+      line-height: 18px;
+    }
     padding-top: 73px;
     margin-top: 50px;
     border-top: 1px solid #ffffff;
@@ -96,6 +134,7 @@
     padding-top: 150px;
     width: 100%;
     padding-left: 120px;
+    padding-bottom: 186px;
   }
   .ant-tabs-nav-wrap {
     // border-bottom: 1px solid #ffffff;
@@ -141,6 +180,7 @@
       width: 100%;
       height: 720px;
       padding: 0px 0px 120px 0px;
+
       //TRÁI CHỮ
       &-text {
         padding-top: 170px;
@@ -155,7 +195,6 @@
           position: relative;
           z-index: 2;
           padding-left: 16px;
-
         }
         h5 {
           padding-left: 16px;
@@ -180,7 +219,7 @@
         }
       }
 
-        //PHẢI HÌNH
+      //PHẢI HÌNH
       &-image {
         img {
           width: 100%;
@@ -201,7 +240,6 @@
         font-style: normal;
       }
       h2 {
-    
         color: #ffffff;
         font-size: 36px;
         line-height: 40px;
@@ -215,7 +253,7 @@
       border-top: 1px solid #ffffff;
 
       h4 {
-          color: #ffffff;
+        color: #ffffff;
         font-size: 20px;
         line-height: 27px;
         font-weight: 900;
@@ -229,44 +267,353 @@
         font-style: normal;
       }
     }
-  .ant-tabs {
-    padding-top: 180px;
-    width: 100%;
-    padding-left:16px;
-  }
-  .tablist{
-    width: 359px;
-height: 43px;
-  }
+    .ant-tabs {
+      padding-top: 180px;
+      width: 100%;
+      padding-left: 16px;
+    }
+    .tablist {
+      width: 359px;
+      height: 43px;
+    }
 
-  .ant-tabs-tab {
-     width: 90px;
-    height: 27px;
-    font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 27px;
-    padding-bottom: 30px;
-    // color: #ffffff;
-    color: grey;
-    // opacity: 0.3;
-  }
-  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: #ffffff;
-    width: 85px;
-    height: 27px;
- font-weight: bold;
-font-size: 20px;
-line-height: 27px;
-  }
-  //GẠCH DƯỚI ACTIVE
-  .ant-tabs-ink-bar {
-    position: absolute;
-    padding-top: 5px;
-    background: white;
-    pointer-events: none;
-  }
-
-
+    .ant-tabs-tab {
+      width: 90px;
+      height: 27px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      padding-bottom: 30px;
+      // color: #ffffff;
+      color: grey;
+      // opacity: 0.3;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #ffffff;
+      width: 85px;
+      height: 27px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    //GẠCH DƯỚI ACTIVE
+    .ant-tabs-ink-bar {
+      position: absolute;
+      padding-top: 5px;
+      background: white;
+      pointer-events: none;
+    }
   }
 }
+
+@media screen and (max-width: 321px) {
+  .location {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lab Grotesque VN';
+    background-color: #111820;
+    &__banner {
+      width: 100%;
+      height: 720px;
+      padding: 0px 0px 120px 0px;
+
+      //TRÁI CHỮ
+      &-text {
+        padding-top: 170px;
+        h1 {
+          width: 320px;
+          height: 56px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 50px;
+          line-height: 50px;
+          color: #ffffff;
+          position: relative;
+          z-index: 2;
+          padding-left: 16px;
+        }
+        h5 {
+          padding-left: 16px;
+          width: 320px;
+          height: 189px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 25px;
+          color: #ffffff;
+          // padding-top: 40px;
+        }
+        h4 {
+          width: 320px;
+          height: 189px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 25px;
+          color: #ffffff;
+          padding-top: 20px;
+        }
+      }
+
+      //PHẢI HÌNH
+      &-image {
+        img {
+          width: 100%;
+          height: 375px;
+          padding-left: 0px;
+        }
+      }
+    }
+    &__saigon {
+      padding-top: 30px;
+      // border-top: 1px solid #ffffff;
+
+      h4 {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 900;
+        font-style: normal;
+      }
+      h2 {
+        color: #ffffff;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+    &__lamdong {
+      padding-top: 73px;
+      margin-top: 50px;
+      border-top: 1px solid #ffffff;
+
+      h4 {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 900;
+        font-style: normal;
+      }
+      h2 {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 40px;
+        font-style: normal;
+      }
+    }
+    .ant-tabs {
+      padding-top: 180px;
+      width: 100%;
+      padding-left: 16px;
+    }
+    .tablist {
+      width: 320px;
+      height: 43px;
+    }
+
+    .ant-tabs-tab {
+      width: 70px;
+      height: 25px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 25px;
+      padding-bottom: 30px;
+      // color: #ffffff;
+      color: grey;
+      // opacity: 0.3;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #ffffff;
+      width: 85px;
+      height: 27px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    //GẠCH DƯỚI ACTIVE
+    .ant-tabs-ink-bar {
+      position: absolute;
+      padding-top: 5px;
+      background: white;
+      pointer-events: none;
+    }
+  }
+}
+
+//1024*768 :
+
+// .location {
+//   width: 100%;
+//   height: 100%;
+//   font-family: 'Lab Grotesque VN';
+//   background-color: #111820;
+//   margin-bottom: 0px;
+//   padding-bottom: 0px;
+//   &__banner {
+//     width: 100%;
+//     height: 720px;
+//     padding: 0px 0px 120px 0px;
+//     //TRÁI CHỮ
+//     &-text {
+//       padding-top: 170px;
+//       h1 {
+//         // padding-top: 80px;
+//         width: 720px;
+//         height: 112px;
+//         font-style: normal;
+//         font-weight: bold;
+//         font-size: 112px;
+//         line-height: 112px;
+//         color: #ffffff;
+//         position: relative;
+//         z-index: 2;
+//       }
+//       h5 {
+//         width: 480px;
+//         height: 162px;
+//         font-style: normal;
+//         font-weight: normal;
+//         font-size: 17px;
+//         line-height: 27px;
+//         color: #ffffff;
+//         // padding-top: 40px;
+//       }
+//       h4 {
+//         width: 480px;
+//         height: 162px;
+//         font-style: normal;
+//         font-weight: normal;
+//         font-size: 17px;
+//         line-height: 27px;
+//         color: #ffffff;
+//         padding-top: 20px;
+//       }
+//     }
+
+//     //PHẢI HÌNH
+//     &-image {
+//       img {
+//         width: 100%;
+//         height: 720px;
+//         padding-left: 5%;
+//       }
+//     }
+//   }
+//   &__saigon {
+//     //BADGE :
+//     .ant-badge {
+//       color: white;
+//     }
+//     .ant-badge-count {
+//       background: none;
+//       box-shadow: none;
+//       margin-left: 2px;
+//       margin-top: 5px;
+//     }
+//     .ant-scroll-number-only-unit {
+//       margin-left: 14px;
+//       font-family: 'Lab Grotesque VN';
+//       font-style: normal !important;
+//       font-weight: normal !important;
+//       font-size: 14px;
+//       line-height: 18px;
+//     }
+//     padding-top: 73px;
+//     // border-top: 1px solid #ffffff;
+
+//     h4 {
+//       color: #ffffff;
+//       font-size: 24px;
+//       line-height: 30px;
+//       font-weight: 900;
+//       font-style: normal;
+//     }
+//     h2 {
+//       color: #ffffff;
+//       font-size: 50px;
+//       line-height: 34px;
+//       font-weight: 700;
+//       font-style: normal;
+//     }
+//   }
+//   &__lamdong {
+//     //BADGE :
+//     .ant-badge {
+//       color: white;
+//     }
+//     .ant-badge-count {
+//       background: none;
+//       box-shadow: none;
+//       margin-left: 2px;
+//       margin-top: 5px;
+//     }
+//     .ant-scroll-number-only-unit {
+//       margin-left: 14px;
+//       font-family: 'Lab Grotesque VN';
+//       font-style: normal !important;
+//       font-weight: normal !important;
+//       font-size: 14px;
+//       line-height: 18px;
+//     }
+//     padding-top: 73px;
+//     margin-top: 50px;
+//     border-top: 1px solid #ffffff;
+
+//     h4 {
+//       color: #ffffff;
+//       font-size: 24px;
+//       line-height: 30px;
+//       font-weight: 900;
+//       font-style: normal;
+//       margin-left: 0px;
+//     }
+//     h2 {
+//       color: #ffffff;
+//       font-size: 50px;
+//       line-height: 34px;
+//       font-weight: 700;
+//       font-style: normal;
+//     }
+//   }
+//   .ant-tabs {
+//     padding-top: 150px;
+//     width: 100%;
+//     padding-left: 120px;
+//     padding-bottom: 186px;
+//   }
+//   .ant-tabs-nav-wrap {
+//     // border-bottom: 1px solid #ffffff;
+//   }
+//   .ant-tabs-tab {
+//     width: 116px;
+//     height: 35px;
+//     font-style: normal;
+//     font-weight: 900;
+//     font-size: 27px;
+//     line-height: 35px;
+//     padding-bottom: 30px;
+//     // color: #ffffff;
+//     color: grey;
+//     // opacity: 0.3;
+//   }
+//   .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+//     color: #ffffff;
+//     width: 116px;
+//     height: 35px;
+//     font-style: normal;
+//     font-weight: 900;
+//     font-size: 27px;
+//     line-height: 35px;
+//   }
+//   //GẠCH DƯỚI ACTIVE
+//   .ant-tabs-ink-bar {
+//     position: absolute;
+//     padding-top: 5px;
+//     background: white;
+//     pointer-events: none;
+//   }
+// }

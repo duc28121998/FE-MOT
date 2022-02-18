@@ -1,2 +1,8 @@
 .cauchuyen {
+  margin-bottom: 50px !important;
+}
+@media screen and(max-width:599px) {
+  .cauchuyen {
+    margin-bottom: 30px !important;
+  }
 }

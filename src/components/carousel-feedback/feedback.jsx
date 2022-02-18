@@ -1,31 +1,14 @@
 import React from 'react'
 import 'antd/dist/antd.css'
 import { Row, Col } from 'antd'
-import { Carousel, Radio } from 'antd'
-import Banner from '../../components/banner/banner'
-import Motall from '../../components/content_trietly/contentTrietly'
-import CardMenu from '../../components/card-menu/card-menu'
-import Box from '../../components/box/box'
+import { Carousel } from 'antd'
 import './feedback.style.scss'
-import Giaydo from '../../assets/images/Product-detail/giaydo.png'
 import Giayvang from '../../assets/images/Product-detail/giayvang.png'
-import Degiay from '../../assets/images/Product-detail/degiay.png'
 import Haimai from '../../assets/images/Product-detail/haimai.png'
 import Xeden from '../../assets/images/Product-detail/xeden.png'
 
 const Feedback = () => {
-  const [dotPosition, setDotPosition] = React.useState('left')
-
-  const handlePositionChange = ({ target: { value } }) => {
-    setDotPosition(value)
-  }
-  //   const contentStyle = {
-  //     height: '800px',
-  //     color: 'black',
-  //     lineHeight: '160px',
-  //     textAlign: 'center',
-  //     background: 'blue',
-  //   }
+  const [dotPosition] = React.useState('left')
 
   return (
     <Carousel dotPosition={dotPosition} className="carousel-feedback">

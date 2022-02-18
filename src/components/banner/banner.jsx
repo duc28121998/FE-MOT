@@ -14,7 +14,9 @@ const Banner = () => {
           <div className="banner__content">
             phiên bản đặc-biệt cho mùa lễ hội 2021
           </div>
-          <div className="banner__buynow">mua liền !</div>
+          <a href="\shop">
+            <div className="banner__buynow">mua liền !</div>
+          </a>
         </div>
 
         {/* 2 */}
@@ -24,7 +26,9 @@ const Banner = () => {
           <div className="banner__content">
             phiên bản đặc-biệt cho mùa lễ hội 2022
           </div>
-          <div className="banner__buynow">mua liền !</div>
+          <a href="\shop">
+            <div className="banner__buynow">mua liền !</div>
+          </a>
         </div>
         {/* 3 */}
         <div className="banner__size">
@@ -32,7 +36,9 @@ const Banner = () => {
           <div className="banner__content">
             phiên bản đặc-biệt cho mùa lễ hội 2023
           </div>
-          <div className="banner__buynow">mua liền !</div>
+          <a href="\shop">
+            <div className="banner__buynow">mua liền !</div>
+          </a>
         </div>
       </Carousel>
     </div>

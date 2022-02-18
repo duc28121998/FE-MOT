@@ -1,17 +1,30 @@
 .shop-page {
   padding-top: 200px;
+  //DRAWER
+  .ant-drawer-header-title {
+    .ant-drawer-close {
+      float: right;
+      justify-content: end;
+      background-color: red;
+      color: red;
+    }
+  }
+
   &__name {
     font-family: 'Lab Grotesque VN';
     font-style: normal;
     font-weight: bold;
     font-size: 112px;
     line-height: 112px;
-    padding-bottom: 50px;
+    margin-left: 119px;
+    margin-bottom: 64px;
     &-icon {
       display: none;
     }
   }
   &__title {
+    padding-top: 20px;
+    margin-left: 119px;
     border-top: 1px solid #111820;
     font-family: 'Lab Grotesque VN';
     font-style: normal;
@@ -21,21 +34,99 @@
     color: #111820;
     &-loc {
       padding-right: 20px !important;
+      h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 68px;
+        color: #111820;
+      }
+    }
+  }
+  .list_h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #111820;
+  }
+  .ant-badge-count {
+    z-index: auto;
+    min-width: 10px;
+    height: 20px;
+    padding: 0 6px;
+    color: #111820;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    white-space: nowrap;
+    text-align: center;
+    background: none;
+    border-radius: none;
+    box-shadow: 0 0 0 0px #fff;
+    outline: none;
+  }
+  &__loc {
+    display: flex;
+    width: 100%;
+    &-trai {
+      margin-left: 120px;
+      width: 35%;
+
+      .giaydoimoi__den {
+        margin-right: 250px;
+        margin-top: 0px;
+        padding-bottom: 30px;
+      }
+      h4 {
+        border-top: 1px solid black;
+        padding-top: 20px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 35px;
+        color: #111820;
+      }
+      h5 {
+        padding-top: 20px;
+        border-top: 1px solid black;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 35px;
+        color: #111820;
+        strong {
+          font-weight: normal;
+          color: gray;
+        }
+      }
+    }
+    &-phai {
+      border-top: 1px solid black;
+      margin-left: 180px;
+      width: 35%;
+      h4 {
+        padding-top: 20px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 35px;
+        color: #111820;
+      }
     }
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 599px) {
   .shop-page {
     padding-top: 100px;
     &__name {
+      margin-left: 10px;
       width: 370px;
       font-size: 50px;
       line-height: 56px;
-      padding-left: 16px !important;
-      padding-right: 16px !important;
+      padding-left: 16px;
       padding-bottom: 25px;
       /* or 100% */
-
       color: #000000;
       &-icon {
         display: block;
@@ -45,12 +136,13 @@
       }
       &-mobile {
         padding-top: 17px !important;
+        font-size: 27px;
+        line-height: 35px;
       }
     }
     &__title {
-      // margin-left: 50px;
-      // margin-right: 25px;
-      width: 370px;
+      margin-left: 18px;
+      max-width: 370px;
       border-top: 1px solid #111820;
       font-family: 'Lab Grotesque VN';
       font-style: normal;
@@ -60,11 +152,76 @@
       color: #111820;
       justify-self: center;
       text-align: center;
-      padding: 0 30px;
-
+      padding: 0px;
       &-loc {
         padding-right: 5px !important;
-        justify-self: center;
+        margin-top: 8px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 48px;
+        color: #111820;
+      }
+    }
+    &__loc {
+      display: inline-block;
+      width: 100%;
+      h2 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 40px;
+        /* identical to box height, or 111% */
+
+        /* black */
+
+        color: #111820;
+      }
+      &-trai {
+        margin-left: 0px;
+        width: 100%;
+        .giaydoimoi__den {
+          margin-right: 15px;
+          margin-top: 0px;
+          padding-bottom: 30px;
+        }
+        h4 {
+          border-top: 3px solid black;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 30px;
+          color: #111820;
+          padding-top: 15px;
+        }
+        h5 {
+          padding-top: 50px;
+          border-top: 3px solid black;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 27px;
+          line-height: 35px;
+          color: #111820;
+          margin-top: 50px;
+          strong {
+            font-weight: normal;
+            color: gray;
+          }
+        }
+      }
+      &-phai {
+        border-top: 3px solid black;
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 50px;
+        h4 {
+          padding-top: 20px;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 27px;
+          line-height: 35px;
+          color: #111820;
+        }
       }
     }
   }

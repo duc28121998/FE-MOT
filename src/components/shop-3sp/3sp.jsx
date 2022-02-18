@@ -3,17 +3,16 @@ import './3sp.style.scss'
 import { Row, Col } from 'antd'
 import IMG1 from '../../assets/images/ractangle-10-17.png'
 import IMG2 from '../../assets/images/ractangle-10-18.png'
-import IMG3 from '../../assets/images/ractangle-10-19.png'
 import IMG4 from '../../assets/images/ractangle-10-20.png'
 const basp = () => {
   return (
-    <div className="bonsp">
-      <div className="bonsp__title">
+    <div className="basp">
+      <div className="basp__title">
         <h4>xem het moi thu</h4>
       </div>
-      <Row className="bonsp__khung">
+      <Row className="basp__khung">
         <Col
-          className="bonsp__sp1"
+          className="basp__sp1"
           xl={{ span: 10, offset: 0 }}
           sm={{ span: 9, offset: 0 }}
           xs={{ span: 24, offset: 0 }}
@@ -23,7 +22,7 @@ const basp = () => {
           <h3>Một dôi nguyên giày</h3>
         </Col>
         <Col
-          className="bonsp__sp2"
+          className="basp__sp2"
           xl={{ span: 10, offset: 4 }}
           sm={{ span: 9, offset: 3 }}
           xs={{ span: 24, offset: 0 }}
@@ -33,7 +32,7 @@ const basp = () => {
           <h3>thích thì mua</h3>
         </Col>
         <Col
-          className="bonsp__sp3"
+          className="basp__sp3"
           xl={{ span: 10, offset: 0 }}
           sm={{ span: 9, offset: 0 }}
           xs={{ span: 24, offset: 0 }}

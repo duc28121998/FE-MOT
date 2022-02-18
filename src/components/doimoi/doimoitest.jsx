@@ -4,10 +4,9 @@ import giaydo from '../../assets/images/shop/giaydo.png'
 // import bgxanh from '../../assets/images/shop/gbxanh.png'
 import giay from '../../assets/images/shop/giay.png'
 import giayden from '../../assets/images/shop/Group 2 Copy.png'
-import { isMobile, isTablet } from 'react-device-detect'
+import { isMobile } from 'react-device-detect'
 // import { DivdoimoiMobile } from './doimoi.style'
 import DoimoiMobile from './doimoitestMobile'
-import DoimoiTablet from './doimoiTablet'
 import './doimoi.style'
 const Doimoitest = () => {
   if (isMobile) return <DoimoiMobile />

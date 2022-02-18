@@ -17,6 +17,7 @@ import './header_black.scss'
 import { Drawer } from 'antd'
 import { DivHeader } from './header.styles'
 import { useLocation } from 'react-router-dom'
+import { DivBadge } from './header.styles'
 // rcc :
 const HeaderBlack = () => {
   const [visible, setVisible] = useState(false)
@@ -25,8 +26,7 @@ const HeaderBlack = () => {
   const location = useLocation()
   console.log('----location', location.pathname)
   // neu no active thi mau trang, khong active thi mau den
-  const active = ['/', '/noiban'].includes(location.pathname)
-
+  const active = ['/', '/noiban', '/cauchuyen'].includes(location.pathname)
   return (
     <>
       <DivHeader
@@ -47,6 +47,7 @@ const HeaderBlack = () => {
           </div>
           <div className="main-nav__giohang">
             {active ? <Whitegiohang /> : <Blackgiohang />}
+            <DivBadge count={5} offset={[0, 5]}></DivBadge>
           </div>
         </div>
       </DivHeader>
@@ -61,7 +62,7 @@ const HeaderBlack = () => {
             <a href="/cauchuyen">
               <h2>câu-chuyện</h2>
             </a>
-            <a href="/contact">
+            <a href="/shop">
               <h2>cửa hàng</h2>
             </a>
             <a href="/noiban">
@@ -92,10 +93,6 @@ const HeaderBlack = () => {
   //   currentUser: selectCurrentUser,
   //   hidden: selectCartHidden,
   // })
-}
-function Menu(props) {
-  const { color } = this.props
-  return <div style={{ backgroundColor: color }} className="color-box"></div>
 }
 
 // colorBox

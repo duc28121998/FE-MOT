@@ -14,17 +14,17 @@ const bonsp = () => {
       <Row className="bonsp__khung">
         <Col
           className="bonsp__sp1"
-          xl={{ span: 10, offset: 0 }}
+          xl={{ span: 9, offset: 0 }}
           sm={{ span: 9, offset: 0 }}
           xs={{ span: 24, offset: 0 }}
         >
-          <img src={IMG1} alt="" />
+          <img src={IMG1} alt="imagemotdoinguyengiay" />
           <h5>giày</h5>
           <h3>Một dôi nguyên giày</h3>
         </Col>
         <Col
           className="bonsp__sp2"
-          xl={{ span: 10, offset: 4 }}
+          xl={{ span: 9, offset: 6 }}
           sm={{ span: 9, offset: 3 }}
           xs={{ span: 24, offset: 0 }}
         >
@@ -34,7 +34,7 @@ const bonsp = () => {
         </Col>
         <Col
           className="bonsp__sp3"
-          xl={{ span: 10, offset: 0 }}
+          xl={{ span: 9, offset: 0 }}
           sm={{ span: 9, offset: 0 }}
           xs={{ span: 24, offset: 0 }}
         >
@@ -44,7 +44,7 @@ const bonsp = () => {
         </Col>
         <Col
           className="bonsp__sp4"
-          xl={{ span: 10, offset: 4 }}
+          xl={{ span: 9, offset: 6 }}
           sm={{ span: 9, offset: 3 }}
           xs={{ span: 24, offset: 0 }}
         >

@@ -32,9 +32,15 @@ const Footer = () => {
               sm={{ span: 24, offset: 0 }}
               xs={{ span: 12, offset: 0 }}
             >
-              <h3>câu-chuyện</h3>
-              <h3>nơi-bán</h3>
-              <h3>thắc-mắc</h3>
+              <a href="/cauchuyen">
+                <h3>câu-chuyện</h3>
+              </a>
+              <a href="/noiban">
+                <h3>nơi-bán</h3>
+              </a>
+              <a href="/thacmac">
+                <h3>thắc-mắc</h3>
+              </a>
             </Col>
           </Row>
         </Col>
@@ -85,7 +91,7 @@ const Footer = () => {
                 >
                   <Socialins />
                   <Socialface />
-                  <img src={bct} className="footer__lienhe-bct" />
+                  <img src={bct} className="footer__lienhe-bct" alt="aaa" />
                 </Col>
                 <Col
                   className="footer__lienhe-version"
