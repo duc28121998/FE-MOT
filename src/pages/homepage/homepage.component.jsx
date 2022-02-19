@@ -49,7 +49,7 @@ const HomePage = () => (
         >
           <div className="homepage__lienhe-title">giữ liên lạc nhé ? </div>
           <div className="homepage__lienhe-desc">
-            điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một
+            điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một.
           </div>
           <div className="homepage__lienhe-email">
             <div className=" input-group mb-3 ">

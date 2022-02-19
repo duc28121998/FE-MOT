@@ -1190,7 +1190,6 @@
       }
       &-rectangle {
         width: 374px;
-
         border: 0px solid black;
         height: 1px;
         background: #111820;
@@ -1547,10 +1546,9 @@
     //COOKIE :
     &__cookie {
       position: absolute;
-      z-index: 1;
+      z-index: 0;
       cursor: pointer;
       width: 375px;
-      z-index: 3;
       top: 0px;
       margin-left: 0px;
       &-in {
