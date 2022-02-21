@@ -13,7 +13,12 @@ export const DivMediaTab = styled(Tabs)`
     line-height: 35px;
     color: #111820;
   }
-
+  .ant-tabs-tabpane {
+    flex: none;
+    width: 100%;
+    outline: none;
+    padding-bottom: 200px;
+  }
   @media screen and (max-width: 1367px) {
     margin-left: 120px;
     margin-top: 850px;
