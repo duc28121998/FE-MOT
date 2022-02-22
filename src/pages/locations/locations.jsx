@@ -78,6 +78,7 @@ const TabsCard = () => {
                 </h2>
                 <h2>Vesta Lifestyle & Gifts</h2>
                 <h2>The Craft House Thương Xá Tax</h2>
+                <h2>Okkio Caffee</h2>
                 <h2>Ki-ốt Bà Na</h2>
               </Col>
             </Row>
@@ -228,7 +229,9 @@ const TabsCard = () => {
             }
             onCancel={() => setVisible(false)}
           >
-            <p className="header"> Biker Shield</p>
+            <p className="header">
+              <h2>Biker Shield</h2>
+            </p>
             <div className="content mt-4">
               <strong>33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn</strong>
               <p className="m-0">Mở cửa hàng ngày từ 09:00 sáng — 09:00 tối</p>
@@ -252,7 +255,9 @@ const TabsCard = () => {
             }
             onCancel={() => setVisible2(false)}
           >
-            <p className="header">Lam.Lam</p>
+            <p className="header">
+              <h2>Lam.Lam</h2>
+            </p>
             <div className="content mt-4">
               <strong>33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn</strong>
               <p className="m-0">Mở cửa hàng ngày từ 09:00 sáng — 09:00 tối</p>

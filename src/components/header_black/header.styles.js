@@ -21,6 +21,7 @@ export const DivHeader = styled.div`
   @media screen and(max-width: 599px) {
     background: ${(props) => (props.active ? '' : 'white')};
     position: absolute;
+
     z-index: 2;
     height: 50px;
     left: 0px;
@@ -28,7 +29,6 @@ export const DivHeader = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* position: fixed; */
     .main-nav {
       &__menu {
         width: 32px;

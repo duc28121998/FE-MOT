@@ -6,9 +6,14 @@ export const DivModal = styled(Modal)`
       background-color: #000;
       color: #fff;
       .header {
-        font-size: 64px;
-        line-height: 68px;
-        transform: translateY(-40px);
+        h2 {
+          font-size: 64px;
+          line-height: 68px;
+          font-style: normal;
+          font-weight: bold;
+          transform: translateY(-40px);
+          color: white;
+        }
       }
       .sub-title {
       }

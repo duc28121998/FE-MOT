@@ -7,7 +7,7 @@
   inset: 0;
   z-index: 1;
 
-  position: none;
+  position: absolute;
   height: 100px;
   left: 0px;
   top: 0px;
@@ -35,7 +35,8 @@
     padding-right: 4px;
   }
 }
-
-strong {
-  font-family: Lab Grotesque VN;
+@media screen and (max-width: 599px) {
+  .ant-scroll-number-only-unit {
+    display: none;
+  }
 }

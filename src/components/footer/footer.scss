@@ -3,7 +3,7 @@
   bottom: 0;
   background-color: #111820;
   // margin-top: 100px;
-  padding: 35px 120px 64px 120px;
+  padding: 35px 120px 40px 120px;
   font-family: 'Lab Grotesque VN';
 
   &__thietke {
@@ -57,6 +57,8 @@
     &-social {
       width: 263.85px;
       height: 46px;
+      opacity: 0.5;
+
       svg {
         margin-right: 24px;
       }
@@ -66,7 +68,7 @@
       }
     }
     &-version {
-      width: 87px;
+      width: 80px;
       height: 27px;
       font-family: 'Lab Grotesque VN';
       font-style: normal;
@@ -112,6 +114,245 @@
     color: #ffffff;
   }
 }
+
+//Responsive width : 1366px :
+@media screen and (max-width: 1367px) {
+  .footer {
+    bottom: 0;
+    background-color: #111820;
+    // margin-top: 100px;
+    padding: 35px 120px 40px 120px;
+    font-family: 'Lab Grotesque VN';
+
+    &__thietke {
+      &-h4 {
+        width: 480px;
+        height: 35px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 35px;
+        color: #ffffff;
+      }
+      &-mot {
+        width: 136px;
+        height: 200px;
+        color: #7d868c;
+        padding-top: 16px;
+        h3 {
+          width: 150px;
+          height: 35px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 27px;
+          line-height: 35px;
+          color: #7d868c;
+        }
+      }
+    }
+    &__lienhe {
+      color: #7d868c;
+      width: 480px;
+      &-title {
+        width: 189px;
+        height: 35px;
+        font-family: 'Lab Grotesque VN';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 27px;
+        line-height: 35px;
+        color: #7d868c;
+      }
+      &-desc {
+        width: 423px;
+        height: 27px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 27px;
+        color: #7d868c;
+      }
+      &-social {
+        width: 263.85px;
+        height: 46px;
+        opacity: 0.5;
+
+        svg {
+          margin-right: 24px;
+        }
+        img {
+          width: 123.85px;
+          height: 46px;
+        }
+      }
+      &-version {
+        width: 80px;
+        height: 27px;
+        font-family: 'Lab Grotesque VN';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        color: #7d868c;
+        padding-top: 15px;
+      }
+      &-hai {
+        padding-top: 166px !important;
+      }
+    }
+    .input-group-append {
+      width: 35px;
+      height: 16px;
+      padding-top: 10px;
+    }
+    input::placeholder {
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 35px;
+      color: #ffffff !important;
+    }
+    .input-group {
+      border-bottom: 1px solid #ffffff;
+      padding-top: 30px;
+    }
+
+    .form-control {
+      background-color: #111820;
+      border: none;
+      padding-bottom: 0px !important;
+      margin-bottom: 0px !important;
+      padding-left: 0px !important;
+      width: 173px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 35px;
+      color: #ffffff;
+    }
+  }
+}
+
+//Responsive width : 1280px :
+@media screen and (max-width: 1280px) {
+  .footer {
+    bottom: 0;
+    background-color: #111820;
+    // margin-top: 100px;
+    padding: 35px 120px 40px 120px;
+    font-family: 'Lab Grotesque VN';
+
+    &__thietke {
+      &-h4 {
+        width: 480px;
+        height: 35px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 35px;
+        color: #ffffff;
+      }
+      &-mot {
+        width: 136px;
+        height: 200px;
+        color: #7d868c;
+        padding-top: 16px;
+        h3 {
+          width: 150px;
+          height: 35px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 27px;
+          line-height: 35px;
+          color: #7d868c;
+        }
+      }
+    }
+    &__lienhe {
+      color: #7d868c;
+      width: 480px;
+      &-title {
+        width: 189px;
+        height: 35px;
+        font-family: 'Lab Grotesque VN';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 27px;
+        line-height: 35px;
+        color: #7d868c;
+      }
+      &-desc {
+        width: 423px;
+        height: 27px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 27px;
+        color: #7d868c;
+      }
+      &-social {
+        width: 263.85px;
+        height: 46px;
+        opacity: 0.5;
+
+        svg {
+          margin-right: 24px;
+        }
+        img {
+          width: 123.85px;
+          height: 46px;
+        }
+      }
+      &-version {
+        width: 80px;
+        height: 27px;
+        font-family: 'Lab Grotesque VN';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        color: #7d868c;
+        padding-top: 15px;
+      }
+      &-hai {
+        padding-top: 166px !important;
+      }
+    }
+    .input-group-append {
+      width: 35px;
+      height: 16px;
+      padding-top: 10px;
+    }
+    input::placeholder {
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 35px;
+      color: #ffffff !important;
+    }
+    .input-group {
+      border-bottom: 1px solid #ffffff;
+      padding-top: 30px;
+    }
+
+    .form-control {
+      background-color: #111820;
+      border: none;
+      padding-bottom: 0px !important;
+      margin-bottom: 0px !important;
+      padding-left: 0px !important;
+      width: 173px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 35px;
+      color: #ffffff;
+    }
+  }
+}
+
 //Responsive width : 1024px :
 @media screen and (max-width: 1200px) {
   ///ANT :
@@ -176,6 +417,8 @@
       &-social {
         width: 263.85px;
         height: 46px;
+        opacity: 0.5;
+
         svg {
           margin-right: 15px;
         }
@@ -299,6 +542,7 @@
         width: 32px;
         height: 32px;
         padding-top: 35px;
+        opacity: 0.5;
         svg {
           margin-right: 10px;
         }
@@ -435,12 +679,15 @@
         width: 32px;
         height: 32px;
         padding-top: 35px;
+        opacity: 0.5;
         svg {
           margin-right: 10px;
+          width: 32px;
+          height: 32px;
         }
         img {
-          width: 70px;
-          height: 44px;
+          width: 86.15px;
+          height: 32px;
         }
       }
       &-version {
@@ -452,8 +699,146 @@
         font-size: 15px;
         line-height: 22px;
         color: #7d868c;
-        padding-top: 45px;
+        padding-top: 40px;
         // padding-top: 11px;
+      }
+      &-hai {
+        padding-top: 15px;
+      }
+      &-mot {
+        width: 182.15px;
+        height: 32px;
+        padding-top: 20px !important;
+      }
+    }
+    .input-group-append {
+      width: 35px;
+      height: 16px;
+      padding-top: 10px;
+    }
+    input::placeholder {
+      font-family: 'Lab Grotesque VN';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 35px;
+      color: #ffffff !important;
+      width: 126px;
+      height: 27px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 27px;
+      color: #ffffff;
+    }
+    .input-group {
+      border-bottom: 1px solid #ffffff;
+      padding-top: 10px;
+    }
+
+    .form-control {
+      background-color: #111820;
+      border: none;
+      padding-bottom: 0px !important;
+      margin-bottom: 0px !important;
+      padding-left: 0px !important;
+      width: 173px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 27px;
+      line-height: 35px;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .footer {
+    bottom: 0;
+    width: 320px;
+    height: 452px;
+    background-color: #111820;
+    padding: 48px 20px 16px 16px;
+    font-family: 'Lab Grotesque VN';
+    margin-top: 0px;
+    &__thietke {
+      &-shop {
+        width: 273px;
+        height: 89px;
+      }
+      &-h4 {
+        width: 339px;
+        height: 27px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #ffffff;
+      }
+      &-mot {
+        h3 {
+          width: 101px;
+          height: 27px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 27px;
+          color: #7d868c;
+        }
+      }
+      &-hai {
+        padding-left: 35px;
+      }
+    }
+    &__lienhe {
+      color: #7d868c;
+      width: 480px;
+      // padding-top: 30px;
+      &-title {
+        width: 140px;
+        height: 27px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        color: #7d868c;
+      }
+      &-desc {
+        width: 280px;
+        height: 44px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: #7d868c;
+        padding-top: 4px;
+      }
+      &-social {
+        width: 32px;
+        height: 32px;
+        padding-top: 35px;
+        opacity: 0.5;
+        svg {
+          margin-right: 10px;
+          width: 32px;
+          height: 32px;
+        }
+        img {
+          width: 86.15px;
+          height: 32px;
+        }
+      }
+      &-version {
+        width: 65px;
+        height: 22px;
+        font-family: 'Lab Grotesque VN';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        color: #7d868c;
+        padding-top: 40px;
+        font-size: 10px;
       }
       &-hai {
         padding-top: 15px;
