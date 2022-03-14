@@ -63,15 +63,15 @@ class App extends React.Component {
         </div>
         <div className="main-content">
           <Switch>
-            <Route exact path="/shop" component={ShopPage} />
+            {/* <Route exact path="/shop" component={ShopPage} /> */}
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/shop" component={Shop} />
-            <Route exact path="/footer" component={Footer} />
-            <Route exact path="/trietly" component={TrietLy} />
-            <Route exact path="/product" component={Product} />
-            <Route exact path="/card" component={CardMenu} />
-            <Route exact path="/4sp" component={Bonsp} />
-            <Route exact path="/Carousel" component={Carousel} />
+            {/* <Route exact path="/shop" component={Shop} /> */}
+            {/* <Route exact path="/footer" component={Footer} /> */}
+            {/* <Route exact path="/trietly" component={TrietLy} /> */}
+            {/* <Route exact path="/product" component={Product} /> */}
+            {/* <Route exact path="/card" component={CardMenu} /> */}
+            {/* <Route exact path="/4sp" component={Bonsp} /> */}
+            {/* <Route exact path="/Carousel" component={Carousel} />
             <Route exact path="/cauchuyen" component={BannerCauchuyen} />
             <Route exact path="/noiban" component={Locations} />
             <Route exact path="/thacmac" component={ThacMac} />
@@ -80,7 +80,7 @@ class App extends React.Component {
             <Route exact path="/checkoutstep1" component={CheckoutStep1} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/Cauchuyen" component={Cauchuyen} />
-            <Route exact path="/Signin" component={Signin} />
+            <Route exact path="/Signin" component={Signin} /> */}
 
             <Route
               exact
